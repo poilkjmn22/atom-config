@@ -1,0 +1,31 @@
+{
+	"*": {
+		"autocomplete-plus": {},
+		"core": {
+			"packagesWithSnippetsDisabled": [],
+			"telemetryConsent": "no",
+			"uriHandlerRegistration": "always"
+		},
+		"editor": {
+			"fontSize": 20
+		},
+		"exception-reporting": {
+			"userId": "e5b798fa-89f8-40e4-be32-0a5339fbb120"
+		},
+		"gpp-compiler": {},
+		"linter-gcc": {},
+		"sync-settings": {
+			"useOtherLocation": true
+		},
+		"sync-settings-folder-location": {
+			"folderPath": "D:\\myWebApp\\atom-config\\sync-settings-backup"
+		},
+		"sync-settings-git-location": {
+			"gitUrl": "https://github.com/poilkjmn22/atom-config.git"
+		},
+		"tree-view": {},
+		"welcome": {
+			"showOnStartup": false
+		}
+	}
+}
