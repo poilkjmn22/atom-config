@@ -7,7 +7,7 @@
 			"uriHandlerRegistration": "always"
 		},
 		"editor": {
-			"fontSize": 20
+			"fontSize": 22
 		},
 		"exception-reporting": {
 			"userId": "e5b798fa-89f8-40e4-be32-0a5339fbb120"
@@ -15,6 +15,7 @@
 		"gpp-compiler": {},
 		"linter-gcc": {},
 		"sync-settings": {
+			"hiddenSettings": {},
 			"useOtherLocation": true
 		},
 		"sync-settings-folder-location": {

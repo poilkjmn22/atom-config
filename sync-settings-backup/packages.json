@@ -233,6 +233,9 @@
 	"language-yaml": {
 		"version": "0.32.0"
 	},
+	"learn-atom-package-word-count": {
+		"version": "0.0.0"
+	},
 	"line-ending-selector": {
 		"version": "0.7.7"
 	},
