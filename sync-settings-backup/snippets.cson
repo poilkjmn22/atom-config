@@ -52,6 +52,18 @@
     'prefix': 'el-radio'
     'body': '<el-radio v-model="${1:radioModel}" label="${2:radioLabel}">${3:slot}</el-radio>'
 
+  'div-el-loading':
+    'prefix': 'div-el-loading'
+    'body': """
+      <div class="${1:loadingWrapperClassname}"
+         v-loading="loading"
+         element-loading-text=""
+         element-loading-spinner="el-icon-loading"
+         element-loading-background="rgba(255, 255, 255, 0.5)">
+        $2
+      </div>
+    """
+
   'axios':
     'prefix': 'axios'
     'body': """
