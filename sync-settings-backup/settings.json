@@ -1,10 +1,22 @@
 {
 	"*": {
+		"atom-clock": {
+			"dateFormat": "HH:mm:ss",
+			"locale": "zh-cn",
+			"refreshInterval": 15,
+			"showClockIcon": true,
+			"showTooltip": true,
+			"tooltipDateFormat": "LLL"
+		},
 		"autocomplete-plus": {},
 		"core": {
 			"packagesWithSnippetsDisabled": [],
 			"telemetryConsent": "no",
-			"uriHandlerRegistration": "always"
+			"uriHandlerRegistration": "always",
+			"themes": [
+				"one-dark-ui",
+				"atom-material-syntax"
+			]
 		},
 		"editor": {
 			"fontSize": 30

@@ -30,3 +30,23 @@ atom-text-editor {
 atom-text-editor .cursor {
   // border-color: red;
 }
+
+
+//styles for atom-clock
+@success-color: #67c23a;
+.atom-clock{
+  color: @success-color;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.atom-clock-tooltip{
+  .tooltip-inner{
+    background-color: @success-color;
+    font-size: 16px;
+  }
+
+  &.tooltip.top .tooltip-arrow{
+    border-top-color: @success-color;
+  }
+}
