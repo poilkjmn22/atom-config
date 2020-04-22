@@ -2,6 +2,9 @@
 	"about": {
 		"version": "1.9.1"
 	},
+	"active-editor-info": {
+		"version": "0.0.0"
+	},
 	"archive-view": {
 		"version": "0.65.1"
 	},
@@ -70,6 +73,9 @@
 	},
 	"command-palette": {
 		"version": "0.43.5"
+	},
+	"convert-term-case": {
+		"version": "0.0.0"
 	},
 	"dalek": {
 		"version": "0.2.2"
@@ -312,7 +318,7 @@
 		"version": "4.3.2"
 	},
 	"sync-settings-folder-location": {
-		"version": "1.0.3"
+		"version": "1.0.4"
 	},
 	"tabs": {
 		"version": "0.110.0"
