@@ -9,23 +9,48 @@
 			"tooltipDateFormat": "LLL"
 		},
 		"autocomplete-plus": {},
+		"autoprefixer": {
+			"browsers": [
+				"> 0.5%",
+				"last 2 versions",
+				"Firefox ESR"
+			]
+		},
 		"core": {
+			"disabledPackages": [
+				"language-csharp",
+				"language-go",
+				"language-java",
+				"language-ruby",
+				"language-ruby-on-rails"
+			],
 			"packagesWithSnippetsDisabled": [],
 			"telemetryConsent": "no",
-			"uriHandlerRegistration": "always",
 			"themes": [
 				"one-dark-ui",
 				"atom-material-syntax"
-			]
+			],
+			"uriHandlerRegistration": "always"
 		},
 		"editor": {
-			"fontSize": 30
+			"fontSize": 25
 		},
 		"exception-reporting": {
 			"userId": "e5b798fa-89f8-40e4-be32-0a5339fbb120"
 		},
 		"gpp-compiler": {},
+		"highlight-selected": {},
+		"linter-eslint": {
+			"autofix": {
+				"fixOnSave": true,
+				"ignoreFixableRulesWhileTyping": true
+			}
+		},
 		"linter-gcc": {},
+		"linter-sass-lint": {},
+		"linter-ui-default": {
+			"panelHeight": 300
+		},
 		"sync-settings": {
 			"hiddenSettings": {},
 			"useOtherLocation": true
