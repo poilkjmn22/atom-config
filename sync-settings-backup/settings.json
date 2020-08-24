@@ -44,12 +44,22 @@
 			"autofix": {
 				"fixOnSave": true,
 				"ignoreFixableRulesWhileTyping": true
-			}
+			},
+			"scopes": [
+				"source.js",
+				"source.jsx",
+				"source.js.jsx",
+				"source.flow",
+				"source.babel",
+				"source.js-semantic",
+				"text.html.vue"
+			]
 		},
 		"linter-gcc": {},
 		"linter-sass-lint": {},
 		"linter-ui-default": {
-			"panelHeight": 300
+			"panelHeight": 300,
+			"showPanel": true
 		},
 		"sync-settings": {
 			"hiddenSettings": {},
