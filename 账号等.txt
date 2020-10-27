@@ -1,0 +1,71 @@
+所有机器密码 mbynEkeztH5HN6XJ
+
+服务监控（外网）：http://10.10.155.93:3000
+viewer
+wenbaviewer
+
+外网VPN：qi.fang@wenba_vpn
+fangqi 身份宝
+内网VPN：
+qi.fang 515725
+
+confluence
+qi.fang
+sghi688sghi688
+
+gitlab/shangma
+qi.fang
+sghi688@Qqq10422
+
+github
+poilkjmn22
+sghi688@qq10422
+
+sony
+sghi688886ihgs@163.com
+sgh688@Qqq10422
+
+[1] rtc_001 192.168.150.26 22 root 111111
+[2] rtc_002 192.168.150.30 22 root
+[3] rtc_003 192.168.150.28 22 root
+
+ipservice已经部署到线上ucould环境
+上海公司内部开发环境地址: http://192.168.150.30/findip 
+rd&qa测试环境地址：http://10.2.1.80:10020/findip
+线上生产环境地址：http://10.10.31.174:10020/findip (ucloud内网地址）
+
+说明文档 confluence地址： http://10.2.1.12:8090/pages/viewpage.action?pageId=9458209
+
+
+linux服务器常用操作
+ps -ef | grep web_main
+nohup ./*.sh
+
+TASKKILL /IM openvpn.exe /F
+
+rimraf node_modules
+
+[credential]
+    helper = store
+
+git remote -v
+
+
+storm实时监控日志查询文档:
+http://10.2.1.12:8090/pages/viewpage.action?pageId=10391817
+
+api visit url:
+http://10.10.162.99:8030/api/query/watchStat
+
+PPT转码
+==test
+rdesktop  -u administrator -p 111111 172.16.31.215 -r disk:h=/home/daniel/workspace/wenba -g 1440x900 &
+==test
+
+==rd
+ip地址: 公网 - 39.96.52.81 内网 - 10.0.158.244
+用户名：administrator
+密码：Wenba2018!@#
+==rd
+
+172.16.31.203
