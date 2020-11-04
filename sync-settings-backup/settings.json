@@ -1,77 +1,15 @@
 {
 	"*": {
-		"atom-clock": {
-			"dateFormat": "HH:mm:ss",
-			"locale": "zh-cn",
-			"refreshInterval": 15,
-			"showClockIcon": true,
-			"showTooltip": true,
-			"tooltipDateFormat": "LLL"
-		},
-		"autocomplete-plus": {},
-		"autoprefixer": {
-			"browsers": [
-				"> 0.5%",
-				"last 2 versions",
-				"Firefox ESR"
-			]
-		},
-		"core": {
-			"disabledPackages": [
-				"language-csharp",
-				"language-go",
-				"language-java",
-				"language-ruby",
-				"language-ruby-on-rails"
-			],
-			"packagesWithSnippetsDisabled": [],
-			"telemetryConsent": "no",
-			"themes": [
-				"one-dark-ui",
-				"atom-material-syntax"
-			],
-			"uriHandlerRegistration": "always"
-		},
-		"editor": {
-			"fontSize": 25
-		},
 		"exception-reporting": {
-			"userId": "e5b798fa-89f8-40e4-be32-0a5339fbb120"
-		},
-		"gpp-compiler": {},
-		"highlight-selected": {},
-		"linter-eslint": {
-			"autofix": {
-				"fixOnSave": true,
-				"ignoreFixableRulesWhileTyping": true
-			},
-			"scopes": [
-				"source.js",
-				"source.jsx",
-				"source.js.jsx",
-				"source.flow",
-				"source.babel",
-				"source.js-semantic",
-				"text.html.vue"
-			]
-		},
-		"linter-gcc": {},
-		"linter-sass-lint": {},
-		"linter-ui-default": {
-			"panelHeight": 300,
-			"showPanel": true
+			"userId": "692bd991-5a68-4307-9df0-0d4b1c49cca5"
 		},
 		"sync-settings": {
 			"hiddenSettings": {},
 			"useOtherLocation": true
 		},
 		"sync-settings-folder-location": {
-			"folderPath": "D:\\myWebApp\\atom-config\\sync-settings-backup"
+			"folderPath": "/Users/fangqi-apple/Documents/WebDev/atom-config/sync-settings-backup"
 		},
-		"sync-settings-git-location": {
-			"gitUrl": "https://github.com/poilkjmn22/atom-config.git"
-		},
-		"tree-view": {},
 		"welcome": {
 			"showOnStartup": false
 		}
