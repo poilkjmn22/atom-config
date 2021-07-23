@@ -1,0 +1,11 @@
+[user]
+	email = sghi688886ihgs@163.com
+	name = fangqi
+[http]
+	postBuffer = 52428800000
+[diff]
+	tool = vimdiff
+[alias]
+	d = difftool
+[difftool]
+	prompt = false
