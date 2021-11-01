@@ -87,6 +87,7 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-projectionist')
+call minpac#add('tpope/vim-obsession')
 call minpac#add('junegunn/fzf')
 call minpac#add('nelstrom/vim-qargs')
 
