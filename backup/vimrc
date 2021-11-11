@@ -70,12 +70,13 @@ set laststatus=2
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-" disable arrow-keys
+" keymap
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 nnoremap <C-p> : <C-u>Fzf<CR>
+map <C-c> :%s///gn<CR> " 统计当前模式的统计个数
 
 " use minpac to help  manage packages
 packadd minpac
@@ -87,14 +88,62 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-projectionist')
+call minpac#add('tpope/vim-obsession')
+call minpac#add('tpope/vim-abolish')
 call minpac#add('junegunn/fzf')
 call minpac#add('nelstrom/vim-qargs')
+call minpac#add('kana/vim-textobj-user')
+call minpac#add('kana/vim-textobj-lastpat')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
-" tools
-iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
-iab xdate <c-r>=strftime("%Y-%m-%d")<cr>
+" search & substitution
+xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch(cmdtype)
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+
+
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+
+" 简写
+iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")
+iab xdate <c-r>=strftime("%Y-%m-%d")
+iab file_desc <!--<cr>
+      \* @Author: fangqi<cr>
+      \* @Date: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \* @LastEditors: fangqi<cr>
+      \* @LastEditTime: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \* @Description:  机载WiFi管控..限流设置<cr>
+      \* @Copyright(c) 2021 CMIM Network Co.,Ltd. All Rights Reserve<cr>
+      \-->
+
+iab c_main #include <stdio.h><cr>
+      \<cr>
+      \int main(void) {<cr><cr>
+      \<Tab>return 0;<cr>
+      \<BS>}
+
+iab cpp_main #include <iostream><cr>
+      \<cr>
+      \using namespace std;<cr><cr>
+      \int main() {<cr><cr>
+      \<Tab>return 0;<cr>
+      \<BS>}
+
+" fzf
 command! Fzf call fzf#run({'source': 'git ls-files', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
 command! FzfSource call fzf#run({'source': 'find node_modules/**/*.*', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
