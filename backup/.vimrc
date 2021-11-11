@@ -72,7 +72,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-nnoremap <C-p> : <C-u>Fzf<CR>
+nnoremap <C-p> : <C-u>FZF<CR>
 
 " use minpac to help  manage packages
 packadd minpac
@@ -80,15 +80,9 @@ call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-unimpaired')
-call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
-call minpac#add('tpope/vim-commentary')
 call minpac#add('junegunn/fzf')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
-" tools
-iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
-command! Fzf call fzf#run({'source': 'git ls-files', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
-command! FzfSource call fzf#run({'source': 'find node_modules/**', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})

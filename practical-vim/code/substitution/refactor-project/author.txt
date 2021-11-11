@@ -1,1 +1,1 @@
-Pragmatic Vim is written by Drew Neil.
+Practical Vim is written by Drew Neil.
