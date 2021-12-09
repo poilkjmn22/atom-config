@@ -94,6 +94,7 @@ call minpac#add('junegunn/fzf')
 call minpac#add('nelstrom/vim-qargs')
 call minpac#add('kana/vim-textobj-user')
 call minpac#add('kana/vim-textobj-lastpat')
+call minpac#add('mileszs/ack.vim')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -122,14 +123,14 @@ endfunction
 " 简写
 iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")
 iab xdate <c-r>=strftime("%Y-%m-%d")
-iab file_desc <!--<cr>
-      \* @Author: fangqi<cr>
-      \* @Date: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
-      \* @LastEditors: fangqi<cr>
-      \* @LastEditTime: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
-      \* @Description:  机载WiFi管控..限流设置<cr>
-      \* @Copyright(c) 2021 CMIM Network Co.,Ltd. All Rights Reserve<cr>
-      \-->
+iab file_desc /* <cr>
+      \@Author: fangqi<cr>
+      \@Date: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \@LastEditors: fangqi<cr>
+      \@LastEditTime: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \@Description: <cr>
+      \@Copyright(c) 2021 CMIM Network Co.,Ltd. All Rights Reserve<cr>
+      \/<Up><Up>
 
 iab c_main #include <stdio.h><cr>
       \<cr>
