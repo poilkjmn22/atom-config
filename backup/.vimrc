@@ -63,16 +63,20 @@ set mouse=a
 set number
 set nocompatible
 filetype plugin on
+runtime macros/matchit.vim
 set nobackup
 set nowritebackup
 set laststatus=2
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
 
-" disable arrow-keys
+" keymap
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-nnoremap <C-p> : <C-u>FZF<CR>
+nnoremap <C-p> : <C-u>Fzf<CR>
+map <C-c> :%s///gn<CR> " 统计当前模式的统计个数
 
 " use minpac to help  manage packages
 packadd minpac
@@ -80,9 +84,126 @@ call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-unimpaired')
+call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-projectionist')
+call minpac#add('tpope/vim-obsession')
+call minpac#add('tpope/vim-abolish')
 call minpac#add('junegunn/fzf')
+call minpac#add('nelstrom/vim-qargs')
+call minpac#add('kana/vim-textobj-user')
+call minpac#add('kana/vim-textobj-lastpat')
+call minpac#add('mileszs/ack.vim')
+call minpac#add('dense-analysis/ale.git')
+call minpac#add('posva/vim-vue.git')
+call minpac#add('pangloss/vim-javascript')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+
+" search & substitution
+xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch('?')<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch(cmdtype)
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+
+
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+
+" 简写
+iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
+iab xdate <c-r>=strftime("%Y-%m-%d")<cr>
+iab file_desc /* <cr>
+      \@Author: fangqi<cr>
+      \@Date: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \@LastEditors: fangqi<cr>
+      \@LastEditTime: <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr><cr>
+      \@Description: <cr>
+      \@Copyright(c) 2021 CMIM Network Co.,Ltd. All Rights Reserve<cr>
+      \/<Up><Up>
+
+iab c_main #include <stdio.h><cr>
+      \<cr>
+      \int main(void) {<cr><cr>
+      \<Tab>return 0;<cr>
+      \<BS>}
+
+iab cpp_main #include <iostream><cr>
+      \<cr>
+      \using namespace std;<cr><cr>
+      \int main() {<cr><cr>
+      \<Tab>return 0;<cr>
+      \<BS>}
+
+iab for for(int i = 0; i < length; i++) {<cr>
+      \<Tab><cr>
+      \<BS>}<Up>
+
+iab for_2 for(int i = 0; i < length; i++) {<cr>
+      \<Tab>for(int j = 0; j < length; j++) {<cr>
+      \}<cr>
+      \<BS>}<Up><Up>
+
+iab if if () {<cr>
+      \<Tab><cr>
+      \<BS>}<Up><Up>
+
+iab ife if () {<cr>
+      \<Tab><cr>
+      \<BS>} else {<cr>
+      \<Tab><cr>
+      \<BS>}<Up><Up><Up><Up>
+
+" fzf
+command! Fzf call fzf#run({'source': 'git ls-files', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
+command! FzfSource call fzf#run({'source': 'find node_modules/**/*.*', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
+
+" when write file
+function! FileCommentCheck()
+  let currFilePath = expand('%:p')
+  let list = readfile(currFilePath)
+  let lineLastEditTime = get(list, 4)
+  if (stridx(lineLastEditTime, 'LastEditTime') > -1)
+    let idxDate = match(lineLastEditTime, '\d')
+    let list[4] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
+    call writefile(list, currFilePath, "s")
+    execute 'edit'
+  endif
+endfunction
+
+function! AudoCommentFile()
+  execute 'normal' "5Gf:lc$ xtime"
+endfunction
+command! Acf call FileCommentCheck()
+augroup  fileComment
+  autocmd!
+  autocmd BufWritePost *.vue,*.js,*.scss,*.cpp,*.c Acf
+  autocmd BufWritePost *.vim,vimrc source % 
+augroup END
+
+" For JavaScript files, use 'eslint'
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\ }
+" Mapping in the style of unimpaired-next
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
+
+" Syntax: JavaScript, Vue, ...
+let g:vue_pre_processors = ['scss']
 
