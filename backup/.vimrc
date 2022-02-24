@@ -76,6 +76,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 nnoremap <C-p> : <C-u>Fzf<CR>
+nnoremap <C-p><C-a> : <C-u>FzfAll<CR>
 map <C-c> :%s///gn<CR> " 统计当前模式的统计个数
 
 " use minpac to help  manage packages
@@ -152,6 +153,14 @@ iab for for(int i = 0; i < length; i++) {<cr>
       \<Tab><cr>
       \<BS>}<Up>
 
+iab forin for(const k in iter) {<cr>
+      \<Tab><cr>
+      \<BS>}<Up>
+
+iab forof for(const v of iter) {<cr>
+      \<Tab><cr>
+      \<BS>}<Up>
+
 iab for_2 for(int i = 0; i < length; i++) {<cr>
       \<Tab>for(int j = 0; j < length; j++) {<cr>
       \}<cr>
@@ -166,9 +175,19 @@ iab ife if () {<cr>
       \<BS>} else {<cr>
       \<Tab><cr>
       \<BS>}<Up><Up><Up><Up>
+" vue snippers
+iab vue <template><cr>
+      \<Tab><div class="comp-name-box"><cr></div><cr>
+      \</template><cr>
+      \<script><cr>
+      \export default {<cr>}<cr>
+      \</script><cr>
+      \<style lang="scss" scoped></style><cr>
+      \<Up><Up><Up><Up><Up><Up><Up>
 
 " fzf
 command! Fzf call fzf#run({'source': 'git ls-files', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
+command! FzfAll call fzf#run({'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
 command! FzfSource call fzf#run({'source': 'find node_modules/**/*.*', 'sink': 'tabe', 'window': {'width': 0.9, 'height': 0.6}})
 
 " when write file
@@ -179,6 +198,11 @@ function! FileCommentCheck()
   if (stridx(lineLastEditTime, 'LastEditTime') > -1)
     let idxDate = match(lineLastEditTime, '\d')
     let list[4] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
+
+    let lineAuthor = get(list, 3)
+    let idxAuthor = match(lineAuthor, ':')
+    let list[3] = strpart(lineAuthor, 0, idxAuthor) . ": fangqi"
+
     call writefile(list, currFilePath, "s")
     execute 'edit'
   endif
