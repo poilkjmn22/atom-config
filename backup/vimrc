@@ -194,14 +194,15 @@ command! FzfSource call fzf#run({'source': 'find node_modules/**/*.*', 'sink': '
 function! FileCommentCheck()
   let currFilePath = expand('%:p')
   let list = readfile(currFilePath)
-  let lineLastEditTime = get(list, 4)
+  let idxLineLastEditTime = 5
+  let lineLastEditTime = get(list, idxLineLastEditTime)
   if (stridx(lineLastEditTime, 'LastEditTime') > -1)
     let idxDate = match(lineLastEditTime, '\d')
-    let list[4] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
+    let list[idxLineLastEditTime] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
 
-    let lineAuthor = get(list, 3)
+    let lineAuthor = get(list, idxLineLastEditTime - 1)
     let idxAuthor = match(lineAuthor, ':')
-    let list[3] = strpart(lineAuthor, 0, idxAuthor) . ": fangqi"
+    let list[idxLineLastEditTime - 1] = strpart(lineAuthor, 0, idxAuthor) . ": fangqi"
 
     call writefile(list, currFilePath, "s")
     execute 'edit'
