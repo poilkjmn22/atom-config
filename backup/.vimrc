@@ -239,6 +239,7 @@ let g:ale_fixers = {
 \ 'vue': ['prettier'],
 \ 'jsx': ['prettier'],
 \ }
+let g:ale_fix_on_save = 1
 
 " Syntax: JavaScript, Vue, ...
 let g:vue_pre_processors = ['scss']
