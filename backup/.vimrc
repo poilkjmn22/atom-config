@@ -96,8 +96,8 @@ call minpac#add('nelstrom/vim-qargs')
 call minpac#add('kana/vim-textobj-user')
 call minpac#add('kana/vim-textobj-lastpat')
 call minpac#add('mileszs/ack.vim')
-call minpac#add('dense-analysis/ale.git')
-call minpac#add('posva/vim-vue.git')
+call minpac#add('dense-analysis/ale')
+call minpac#add('posva/vim-vue')
 call minpac#add('pangloss/vim-javascript')
 
 command! PackUpdate call minpac#update()
@@ -194,14 +194,15 @@ command! FzfSource call fzf#run({'source': 'find node_modules/**/*.*', 'sink': '
 function! FileCommentCheck()
   let currFilePath = expand('%:p')
   let list = readfile(currFilePath)
-  let lineLastEditTime = get(list, 4)
+  let idxLineLastEditTime = 5
+  let lineLastEditTime = get(list, idxLineLastEditTime)
   if (stridx(lineLastEditTime, 'LastEditTime') > -1)
     let idxDate = match(lineLastEditTime, '\d')
-    let list[4] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
+    let list[idxLineLastEditTime] = strpart(lineLastEditTime, 0, idxDate) . strftime("%Y-%m-%d %H:%M:%S")
 
-    let lineAuthor = get(list, 3)
+    let lineAuthor = get(list, idxLineLastEditTime - 1)
     let idxAuthor = match(lineAuthor, ':')
-    let list[3] = strpart(lineAuthor, 0, idxAuthor) . ": fangqi"
+    let list[idxLineLastEditTime - 1] = strpart(lineAuthor, 0, idxAuthor) . ": fangqi"
 
     call writefile(list, currFilePath, "s")
     execute 'edit'
@@ -222,11 +223,23 @@ augroup END
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ }
+
 " Mapping in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
+
+" prettier files
+let g:ale_fixers = {
+\ 'javascript': ['prettier'],
+\ 'json': ['prettier'],
+\ 'scss': ['prettier'],
+\ 'css': ['prettier'],
+\ 'vue': ['prettier'],
+\ 'jsx': ['prettier'],
+\ }
+let g:ale_fix_on_save = 1
 
 " Syntax: JavaScript, Vue, ...
 let g:vue_pre_processors = ['scss']
