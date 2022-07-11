@@ -1,9 +1,13 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+const path = require("path");
+const urlencode = require("urlencode");
+const { writeFile } = require("fs/promises");
+const prettier = require("prettier");
 
-async function getFF14VocationalSkill(url) {
+async function getFF14VocationalSkill(filepath) {
   const { data, status } = await axios
-    .post(url, { timeout: 1 * 60 * 1000 })
+    .post(filepath, { timeout: 1 * 60 * 1000 })
     .catch(console.error);
   if (status === 200) {
     const $ = cheerio.load(data);
@@ -23,10 +27,12 @@ async function getFF14VocationalSkill(url) {
       const tooltipData = await getSkillTooltip(si.id);
       try {
         const $tooltip = cheerio.load(tooltipData.parse.text["*"]);
-        const power = parseInt($tooltip.text().match(/威力[:：]?(\d+)/)[1]);
-        const magicCost = parseInt(
-          $tooltip.text().match(/消耗魔力[:：]?(\d+)/)[1]
-        );
+        const matchPower = $tooltip
+          .html()
+          .match(/威力：<\/span>(\d+)(?:～(\d+))?/);
+        const power = parseInt(matchPower && (matchPower[2] || matchPower[1]));
+        const matchMagicCost = $tooltip.text().match(/消耗魔力[:：]?(\d+)/);
+        const magicCost = parseInt(matchMagicCost && matchMagicCost[1]);
         skillInfoMap.set(
           skillName,
           Object.assign(si, {
@@ -65,11 +71,31 @@ async function getFF14VocationalSkill(url) {
     console.log("未获取到html内容!");
   }
 }
-async function convertSkillData(url) {
-  const res = await getFF14VocationalSkill(url);
-  console.log(res);
+async function convertSkillData(filepath) {
+  // const res = [["技能名称", "威力", "消耗魔法"]];
+  const res = [];
+  const mapSkillInfo = await getFF14VocationalSkill(filepath);
+  for (const [name, { power, magicCost }] of mapSkillInfo) {
+    if (power) {
+      res.push({ name, power, magicCost });
+    }
+  }
+  try {
+    const vocation = urlencode.decode(filepath.match(/\/([^/]+)$/)[1], "utf8");
+    await writeFile(
+      path.resolve(`./ff14VocationSkill/${vocation}.json`),
+      prettier.format(JSON.stringify(res), { semi: true, parser: "json" }),
+      { encoding: "utf8" }
+    );
+  } catch (error) {
+    console.error("there was an error:", error.message);
+  }
+  return res;
 }
 
-convertSkillData(
-  "https://ff14.huijiwiki.com/wiki/%E9%BB%91%E9%AD%94%E6%B3%95%E5%B8%88"
-);
+const skillList = ["钐镰客", "黑魔法师", "武士"];
+for (const skill of skillList) {
+  convertSkillData(
+    `https://ff14.huijiwiki.com/wiki/${urlencode(skill, "utf8")}`
+  );
+}

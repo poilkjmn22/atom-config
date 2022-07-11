@@ -11,9 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {
+    "@babel/parser": "^7.18.8",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1"
   }

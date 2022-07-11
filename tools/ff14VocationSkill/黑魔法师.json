@@ -1,0 +1,23 @@
+[
+  { "name": "冰结", "power": 180, "magicCost": 400 },
+  { "name": "火炎", "power": 180, "magicCost": 800 },
+  { "name": "闪雷", "power": 30, "magicCost": 200 },
+  { "name": "冰冻", "power": 100, "magicCost": 800 },
+  { "name": "崩溃", "power": 100, "magicCost": 800 },
+  { "name": "烈炎", "power": 100, "magicCost": 1500 },
+  { "name": "震雷", "power": 50, "magicCost": 400 },
+  { "name": "爆炎", "power": 260, "magicCost": 2000 },
+  { "name": "冰封", "power": 260, "magicCost": 800 },
+  { "name": "玄冰", "power": 120, "magicCost": 1000 },
+  { "name": "暴雷", "power": 50, "magicCost": 400 },
+  { "name": "核爆", "power": 220, "magicCost": null },
+  { "name": "冰澈", "power": 310, "magicCost": 800 },
+  { "name": "炽炎", "power": 310, "magicCost": 800 },
+  { "name": "霹雷", "power": 50, "magicCost": 400 },
+  { "name": "秽浊", "power": 560, "magicCost": null },
+  { "name": "绝望", "power": 340, "magicCost": null },
+  { "name": "异言", "power": 760, "magicCost": null },
+  { "name": "高烈炎", "power": 140, "magicCost": 1500 },
+  { "name": "高冰冻", "power": 140, "magicCost": 800 },
+  { "name": "悖论", "power": 500, "magicCost": null }
+]
