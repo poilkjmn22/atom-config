@@ -1,0 +1,242 @@
+[
+  {
+    "name": "强力射击",
+    "id": "97",
+    "power": 160,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "直线射击",
+    "id": "98",
+    "power": 200,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "猛者强击",
+    "id": "101",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "毒咬箭",
+    "id": "100",
+    "power": 15,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "失血箭",
+    "id": "110",
+    "power": 110,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "后跃射击",
+    "id": "112",
+    "power": null,
+    "magicCost": null,
+    "distance": 5,
+    "attackRange": 0
+  },
+  {
+    "name": "连珠箭",
+    "id": "106",
+    "power": 110,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "风蚀箭",
+    "id": "113",
+    "power": 20,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "纷乱箭",
+    "id": "107",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "贤者的叙事谣",
+    "id": "114",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "光阴神的礼赞凯歌",
+    "id": "3561",
+    "power": null,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0
+  },
+  {
+    "name": "军神的赞美歌",
+    "id": "116",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "死亡箭雨",
+    "id": "117",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 8
+  },
+  {
+    "name": "战斗之声",
+    "id": "118",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 20
+  },
+  {
+    "name": "放浪神的小步舞曲",
+    "id": "3559",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "完美音调",
+    "id": "7404",
+    "power": 360,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "九天连箭",
+    "id": "3558",
+    "power": 200,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "伶牙俐齿",
+    "id": "3560",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "侧风诱导箭",
+    "id": "3562",
+    "power": 300,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "行吟",
+    "id": "7405",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 20
+  },
+  {
+    "name": "烈毒咬箭",
+    "id": "7406",
+    "power": 20,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "狂风蚀箭",
+    "id": "7407",
+    "power": 25,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "大地神的抒情恋歌",
+    "id": "7408",
+    "power": null,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0
+  },
+  {
+    "name": "辉煌箭",
+    "id": "7409",
+    "power": 280,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "影噬箭",
+    "id": "16494",
+    "power": 270,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "爆发射击",
+    "id": "16495",
+    "power": 220,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "绝峰箭",
+    "id": "16496",
+    "power": 100,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 25
+  },
+  {
+    "name": "百首龙牙箭",
+    "id": "25783",
+    "power": 130,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "光明神的最终乐章",
+    "id": "25785",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 20
+  },
+  {
+    "name": "爆破箭",
+    "id": "25784",
+    "power": 600,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 25
+  }
+]

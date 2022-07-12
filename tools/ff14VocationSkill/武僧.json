@@ -1,0 +1,258 @@
+[
+  {
+    "name": "连击",
+    "id": "53",
+    "power": 310,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "正拳",
+    "id": "54",
+    "power": 300,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "崩拳",
+    "id": "56",
+    "power": 310,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "斗气",
+    "id": "3546",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "双掌打",
+    "id": "61",
+    "power": 280,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "破坏神冲",
+    "id": "62",
+    "power": 110,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "破碎拳",
+    "id": "66",
+    "power": 70,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "真言",
+    "id": "65",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 15
+  },
+  {
+    "name": "双龙脚",
+    "id": "74",
+    "power": 320,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "铁山靠",
+    "id": "25761",
+    "power": 180,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "地烈劲",
+    "id": "70",
+    "power": 130,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "轻身步法",
+    "id": "25762",
+    "power": null,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "空鸣拳",
+    "id": "25763",
+    "power": 100,
+    "magicCost": null,
+    "distance": 10,
+    "attackRange": 10
+  },
+  {
+    "name": "四面脚",
+    "id": "16473",
+    "power": 120,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "震脚",
+    "id": "69",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "演武",
+    "id": "4262",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "必杀技",
+    "id": "25764",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "金刚极意",
+    "id": "7394",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "红莲极意",
+    "id": "7395",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "义结金兰",
+    "id": "7396",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 15
+  },
+  {
+    "name": "疾风极意",
+    "id": "25766",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "万象斗气圈",
+    "id": "16474",
+    "power": 170,
+    "magicCost": null,
+    "distance": 10,
+    "attackRange": 10
+  },
+  {
+    "name": "无我",
+    "id": "16475",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "六合星导脚",
+    "id": "16476",
+    "power": 550,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "破坏神脚",
+    "id": "25767",
+    "power": 110,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "阴阳斗气斩",
+    "id": "3547",
+    "power": 340,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "苍气炮",
+    "id": "3545",
+    "power": 600,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "爆裂脚",
+    "id": "25882",
+    "power": 600,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "翻天脚",
+    "id": "25765",
+    "power": 450,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "斗魂旋风脚",
+    "id": "3543",
+    "power": 850,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 5
+  },
+  {
+    "name": "凤凰舞",
+    "id": "25768",
+    "power": 700,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "梦幻斗舞",
+    "id": "25769",
+    "power": 1150,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 5
+  }
+]

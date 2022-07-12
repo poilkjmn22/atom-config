@@ -12,7 +12,11 @@ async function getFF14VocationalSkill(filepath) {
   if (status === 200) {
     const $ = cheerio.load(data);
 
-    const vocationalSkillList = $("#tab-1 table td .item-name a");
+    const [vocationalSkillListWrapper] = $("#tab-1");
+    const vocationalSkillList = cheerio.load(
+      $(vocationalSkillListWrapper).html()
+    )("table td .item-name a");
+
     const skillInfoMap = new Map();
     for (const skill of vocationalSkillList) {
       const $skill = $(skill);
@@ -27,19 +31,8 @@ async function getFF14VocationalSkill(filepath) {
       const tooltipData = await getSkillTooltip(si.id);
       try {
         const $tooltip = cheerio.load(tooltipData.parse.text["*"]);
-        const matchPower = $tooltip
-          .html()
-          .match(/威力：<\/span>(\d+)(?:～(\d+))?/);
-        const power = parseInt(matchPower && (matchPower[2] || matchPower[1]));
-        const matchMagicCost = $tooltip.text().match(/消耗魔力[:：]?(\d+)/);
-        const magicCost = parseInt(matchMagicCost && matchMagicCost[1]);
-        skillInfoMap.set(
-          skillName,
-          Object.assign(si, {
-            power,
-            magicCost,
-          })
-        );
+        const skillFeatures = extractFeatures($tooltip);
+        skillInfoMap.set(skillName, Object.assign(si, skillFeatures));
       } catch (e) {
         console.error(e);
       }
@@ -66,6 +59,23 @@ async function getFF14VocationalSkill(filepath) {
       }
       return null;
     }
+    function extractFeatures($tooltip) {
+      const matchPower = $tooltip
+        .html()
+        .match(/威力：<\/span>(\d+)(?:～(\d+))?/g);
+      const matchPowerMax = matchPower && matchPower[matchPower.length - 1];
+      const power = parseInt(matchPowerMax && matchPowerMax.match(/\d+$/)[0]);
+
+      const matchMagicCost = $tooltip.text().match(/消耗魔力[:：]?(\d+)/);
+      const magicCost = parseInt(matchMagicCost && matchMagicCost[1]);
+
+      const matchDistance = $tooltip.text().match(/距离[:：]?(\d+)/);
+      const distance = parseInt(matchDistance && matchDistance[1]);
+
+      const matchAttackRange = $tooltip.text().match(/范围[:：]?(\d+)/);
+      const attackRange = parseInt(matchAttackRange && matchAttackRange[1]);
+      return { power, magicCost, distance, attackRange };
+    }
     return skillInfoMap;
   } else {
     console.log("未获取到html内容!");
@@ -75,10 +85,8 @@ async function convertSkillData(filepath) {
   // const res = [["技能名称", "威力", "消耗魔法"]];
   const res = [];
   const mapSkillInfo = await getFF14VocationalSkill(filepath);
-  for (const [name, { power, magicCost }] of mapSkillInfo) {
-    if (power) {
-      res.push({ name, power, magicCost });
-    }
+  for (const [name, skillInfo] of mapSkillInfo) {
+    res.push(Object.assign({ name }, skillInfo));
   }
   try {
     const vocation = urlencode.decode(filepath.match(/\/([^/]+)$/)[1], "utf8");
@@ -93,9 +101,20 @@ async function convertSkillData(filepath) {
   return res;
 }
 
-const skillList = ["钐镰客", "黑魔法师", "武士"];
+const skillList = [
+  "钐镰客",
+  "黑魔法师",
+  "武士",
+  "吟游诗人",
+  "武僧",
+  "忍者",
+  "机工士",
+  // "舞者",
+  // "龙骑士",
+];
 for (const skill of skillList) {
   convertSkillData(
     `https://ff14.huijiwiki.com/wiki/${urlencode(skill, "utf8")}`
   );
+  // break;
 }

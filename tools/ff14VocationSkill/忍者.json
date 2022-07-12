@@ -1,0 +1,314 @@
+[
+  {
+    "name": "双刃旋",
+    "id": "2240",
+    "power": 210,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "残影",
+    "id": "2241",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "绝风",
+    "id": "2242",
+    "power": 320,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "隐遁",
+    "id": "2245",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "飞刀",
+    "id": "2247",
+    "power": 120,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "夺取",
+    "id": "2248",
+    "power": 150,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "攻其不备",
+    "id": "2258",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "旋风刃",
+    "id": "2255",
+    "power": 420,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "血雨飞花",
+    "id": "2254",
+    "power": 100,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "天之印",
+    "id": "2259",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "忍术",
+    "id": "2260",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "地之印",
+    "id": "2261",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "缩地",
+    "id": "2262",
+    "power": null,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "断绝",
+    "id": "2246",
+    "power": 200,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "人之印",
+    "id": "2263",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "生杀予夺",
+    "id": "2264",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "八卦无刃杀",
+    "id": "16488",
+    "power": 120,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "强甲破点突",
+    "id": "3563",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "梦幻三段",
+    "id": "3566",
+    "power": 150,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "风来刃",
+    "id": "25876",
+    "power": 200,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "通灵之术·大虾蟆",
+    "id": "7401",
+    "power": 160,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 6
+  },
+  {
+    "name": "六道轮回",
+    "id": "7402",
+    "power": 500,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "天地人",
+    "id": "7403",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "命水",
+    "id": "16489",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "分身之术",
+    "id": "16493",
+    "power": 80,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "月影雷兽爪",
+    "id": "25777",
+    "power": 560,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "月影雷兽牙",
+    "id": "25778",
+    "power": 560,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "残影镰鼬",
+    "id": "25774",
+    "power": 550,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "幻影野槌",
+    "id": "25776",
+    "power": 50,
+    "magicCost": null,
+    "distance": 100,
+    "attackRange": 5
+  },
+  {
+    "name": "风魔手里剑",
+    "id": "2265",
+    "power": 450,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "通灵之术",
+    "id": "2272",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "火遁之术",
+    "id": "2266",
+    "power": 350,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 5
+  },
+  {
+    "name": "雷遁之术",
+    "id": "2267",
+    "power": 600,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "冰遁之术",
+    "id": "2268",
+    "power": 350,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "风遁之术",
+    "id": "2269",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "土遁之术",
+    "id": "2270",
+    "power": 70,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "水遁之术",
+    "id": "2271",
+    "power": 500,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0
+  },
+  {
+    "name": "劫火灭却之术",
+    "id": "16491",
+    "power": 600,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 5
+  },
+  {
+    "name": "冰晶乱流之术",
+    "id": "16492",
+    "power": 1300,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  }
+]

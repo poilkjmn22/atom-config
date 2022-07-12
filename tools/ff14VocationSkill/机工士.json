@@ -1,0 +1,266 @@
+[
+  {
+    "name": "分裂弹",
+    "id": "2866",
+    "power": 140,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "独头弹",
+    "id": "2868",
+    "power": 210,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "热弹",
+    "id": "2872",
+    "power": 240,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "整备",
+    "id": "2876",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "虹吸弹",
+    "id": "2874",
+    "power": 120,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "散射",
+    "id": "2870",
+    "power": 140,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "狙击弹",
+    "id": "2873",
+    "power": 270,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "超荷",
+    "id": "17209",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "热冲击",
+    "id": "7410",
+    "power": 170,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "车式浮空炮塔",
+    "id": "2864",
+    "power": 70,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "超档车式炮塔",
+    "id": "7415",
+    "power": null,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "野火",
+    "id": "2878",
+    "power": 200,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "弹射",
+    "id": "2890",
+    "power": 120,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "自动弩",
+    "id": "16497",
+    "power": 140,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "热分裂弹",
+    "id": "7411",
+    "power": 200,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "策动",
+    "id": "16889",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 20
+  },
+  {
+    "name": "钻头",
+    "id": "16498",
+    "power": 570,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "热独头弹",
+    "id": "7412",
+    "power": 280,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "热狙击弹",
+    "id": "7413",
+    "power": 360,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "枪管加热",
+    "id": "7414",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "火焰喷射器",
+    "id": "7418",
+    "power": 80,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 8
+  },
+  {
+    "name": "毒菌冲击",
+    "id": "16499",
+    "power": 50,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "空气锚",
+    "id": "16500",
+    "power": 570,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "后式自走人偶",
+    "id": "16501",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "超档后式人偶",
+    "id": "16502",
+    "power": null,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0
+  },
+  {
+    "name": "霰弹枪",
+    "id": "25786",
+    "power": 150,
+    "magicCost": null,
+    "distance": 12,
+    "attackRange": 12
+  },
+  {
+    "name": "回转飞锯",
+    "id": "25788",
+    "power": 570,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 25
+  },
+  {
+    "name": "超负荷车式炮塔",
+    "id": "7416",
+    "power": 200,
+    "magicCost": null,
+    "distance": 40,
+    "attackRange": 0
+  },
+  {
+    "name": "起爆",
+    "id": "16766",
+    "power": null,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "铁臂拳",
+    "id": "16504",
+    "power": 120,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "打桩枪",
+    "id": "16503",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "滚轮冲",
+    "id": "17206",
+    "power": 240,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0
+  },
+  {
+    "name": "王室对撞机",
+    "id": "25787",
+    "power": 750,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  }
+]

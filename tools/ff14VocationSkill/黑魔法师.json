@@ -1,23 +1,250 @@
 [
-  { "name": "冰结", "power": 180, "magicCost": 400 },
-  { "name": "火炎", "power": 180, "magicCost": 800 },
-  { "name": "闪雷", "power": 30, "magicCost": 200 },
-  { "name": "冰冻", "power": 100, "magicCost": 800 },
-  { "name": "崩溃", "power": 100, "magicCost": 800 },
-  { "name": "烈炎", "power": 100, "magicCost": 1500 },
-  { "name": "震雷", "power": 50, "magicCost": 400 },
-  { "name": "爆炎", "power": 260, "magicCost": 2000 },
-  { "name": "冰封", "power": 260, "magicCost": 800 },
-  { "name": "玄冰", "power": 120, "magicCost": 1000 },
-  { "name": "暴雷", "power": 50, "magicCost": 400 },
-  { "name": "核爆", "power": 220, "magicCost": null },
-  { "name": "冰澈", "power": 310, "magicCost": 800 },
-  { "name": "炽炎", "power": 310, "magicCost": 800 },
-  { "name": "霹雷", "power": 50, "magicCost": 400 },
-  { "name": "秽浊", "power": 560, "magicCost": null },
-  { "name": "绝望", "power": 340, "magicCost": null },
-  { "name": "异言", "power": 760, "magicCost": null },
-  { "name": "高烈炎", "power": 140, "magicCost": 1500 },
-  { "name": "高冰冻", "power": 140, "magicCost": 800 },
-  { "name": "悖论", "power": 500, "magicCost": null }
+  {
+    "name": "冰结",
+    "id": "142",
+    "power": 180,
+    "magicCost": 400,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "火炎",
+    "id": "141",
+    "power": 180,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "星灵移位",
+    "id": "149",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "闪雷",
+    "id": "144",
+    "power": 35,
+    "magicCost": 200,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "冰冻",
+    "id": "25793",
+    "power": 100,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "崩溃",
+    "id": "156",
+    "power": 100,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "烈炎",
+    "id": "147",
+    "power": 100,
+    "magicCost": 1500,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "震雷",
+    "id": "7447",
+    "power": 15,
+    "magicCost": 400,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "魔罩",
+    "id": "157",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "爆炎",
+    "id": "152",
+    "power": 260,
+    "magicCost": 2000,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "以太步",
+    "id": "155",
+    "power": null,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "魔泉",
+    "id": "158",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "冰封",
+    "id": "154",
+    "power": 260,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "玄冰",
+    "id": "159",
+    "power": 120,
+    "magicCost": 1000,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "暴雷",
+    "id": "153",
+    "power": 35,
+    "magicCost": 400,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "核爆",
+    "id": "162",
+    "power": 280,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "黑魔纹",
+    "id": "3573",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 3
+  },
+  {
+    "name": "激情咏唱",
+    "id": "3574",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "冰澈",
+    "id": "3576",
+    "power": 310,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "炽炎",
+    "id": "3577",
+    "power": 310,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "魔纹步",
+    "id": "7419",
+    "power": null,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "霹雷",
+    "id": "7420",
+    "power": 20,
+    "magicCost": 400,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "三连咏唱",
+    "id": "7421",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "秽浊",
+    "id": "7422",
+    "power": 560,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "绝望",
+    "id": "16505",
+    "power": 340,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "灵极魂",
+    "id": "16506",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "异言",
+    "id": "16507",
+    "power": 760,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "高烈炎",
+    "id": "25794",
+    "power": 140,
+    "magicCost": 1500,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "高冰冻",
+    "id": "25795",
+    "power": 140,
+    "magicCost": 800,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "详述",
+    "id": "25796",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "悖论",
+    "id": "25797",
+    "power": 500,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  }
 ]

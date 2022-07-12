@@ -1,28 +1,266 @@
 [
-  { "name": "切割", "power": 260, "magicCost": null },
-  { "name": "增盈切割", "power": 140, "magicCost": null },
-  { "name": "死亡之影", "power": 240, "magicCost": null },
-  { "name": "勾刃", "power": 200, "magicCost": null },
-  { "name": "旋转钐割", "power": 120, "magicCost": null },
-  { "name": "地狱切割", "power": 140, "magicCost": null },
-  { "name": "死亡之涡", "power": 80, "magicCost": null },
-  { "name": "噩梦钐割", "power": 120, "magicCost": null },
-  { "name": "隐匿挥割", "power": 340, "magicCost": null },
-  { "name": "束缚挥割", "power": 140, "magicCost": null },
-  { "name": "灵魂切割", "power": 460, "magicCost": null },
-  { "name": "灵魂钐割", "power": 180, "magicCost": null },
-  { "name": "绞决", "power": 400, "magicCost": null },
-  { "name": "缢杀", "power": 400, "magicCost": null },
-  { "name": "断首", "power": 200, "magicCost": null },
-  { "name": "暴食", "power": 500, "magicCost": null },
-  { "name": "大丰收", "power": 800, "magicCost": null },
-  { "name": "团契", "power": 1000, "magicCost": null },
-  { "name": "绞决爪", "power": 400, "magicCost": null },
-  { "name": "缢杀爪", "power": 400, "magicCost": null },
-  { "name": "虚无收割", "power": 460, "magicCost": null },
-  { "name": "交错收割", "power": 460, "magicCost": null },
-  { "name": "阴冷收割", "power": 200, "magicCost": null },
-  { "name": "收获月", "power": 600, "magicCost": null },
-  { "name": "夜游魂切割", "power": 200, "magicCost": null },
-  { "name": "夜游魂钐割", "power": 100, "magicCost": null }
+  {
+    "name": "切割",
+    "id": "24373",
+    "power": 300,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "增盈切割",
+    "id": "24374",
+    "power": 380,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "死亡之影",
+    "id": "24378",
+    "power": 300,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "勾刃",
+    "id": "24386",
+    "power": 300,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0
+  },
+  {
+    "name": "地狱入境",
+    "id": "24401",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "地狱出境",
+    "id": "24402",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "旋转钐割",
+    "id": "24376",
+    "power": 140,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "地狱切割",
+    "id": "24375",
+    "power": 460,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "死亡之涡",
+    "id": "24379",
+    "power": 100,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "神秘纹",
+    "id": "24404",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "噩梦钐割",
+    "id": "24377",
+    "power": 180,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "隐匿挥割",
+    "id": "24389",
+    "power": 340,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "束缚挥割",
+    "id": "24392",
+    "power": 140,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8
+  },
+  {
+    "name": "灵魂切割",
+    "id": "24380",
+    "power": 460,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "灵魂钐割",
+    "id": "24381",
+    "power": 180,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5
+  },
+  {
+    "name": "绞决",
+    "id": "24382",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "缢杀",
+    "id": "24383",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "断首",
+    "id": "24384",
+    "power": 200,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8
+  },
+  {
+    "name": "神秘环",
+    "id": "24405",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 15
+  },
+  {
+    "name": "暴食",
+    "id": "24393",
+    "power": 500,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "夜游魂衣",
+    "id": "24394",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "播魂种",
+    "id": "24387",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0
+  },
+  {
+    "name": "大丰收",
+    "id": "24385",
+    "power": 800,
+    "magicCost": null,
+    "distance": 15,
+    "attackRange": 15
+  },
+  {
+    "name": "团契",
+    "id": "24398",
+    "power": 1000,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "绞决爪",
+    "id": "24390",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "缢杀爪",
+    "id": "24391",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "回退",
+    "id": "24403",
+    "power": null,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0
+  },
+  {
+    "name": "虚无收割",
+    "id": "24395",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "交错收割",
+    "id": "24396",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "阴冷收割",
+    "id": "24397",
+    "power": 200,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8
+  },
+  {
+    "name": "收获月",
+    "id": "24388",
+    "power": 600,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5
+  },
+  {
+    "name": "夜游魂切割",
+    "id": "24399",
+    "power": 200,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0
+  },
+  {
+    "name": "夜游魂钐割",
+    "id": "24400",
+    "power": 100,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8
+  }
 ]
