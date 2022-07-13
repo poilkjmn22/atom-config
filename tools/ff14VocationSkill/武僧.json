@@ -5,7 +5,8 @@
     "power": 310,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "正拳",
@@ -13,7 +14,8 @@
     "power": 300,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "崩拳",
@@ -21,7 +23,8 @@
     "power": 310,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "斗气",
@@ -29,7 +32,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "双掌打",
@@ -37,7 +41,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "破坏神冲",
@@ -45,7 +50,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2
   },
   {
     "name": "破碎拳",
@@ -53,7 +59,8 @@
     "power": 70,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "真言",
@@ -61,7 +68,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 15
+    "attackRange": 15,
+    "CD": 90
   },
   {
     "name": "双龙脚",
@@ -69,7 +77,8 @@
     "power": 320,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "铁山靠",
@@ -77,7 +86,8 @@
     "power": 180,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "地烈劲",
@@ -85,7 +95,8 @@
     "power": 130,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2
   },
   {
     "name": "轻身步法",
@@ -93,7 +104,8 @@
     "power": null,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 30
   },
   {
     "name": "空鸣拳",
@@ -101,7 +113,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 10,
-    "attackRange": 10
+    "attackRange": 10,
+    "CD": 1
   },
   {
     "name": "四面脚",
@@ -109,7 +122,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2
   },
   {
     "name": "震脚",
@@ -117,7 +131,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 40
   },
   {
     "name": "演武",
@@ -125,7 +140,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2
   },
   {
     "name": "必杀技",
@@ -133,7 +149,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "金刚极意",
@@ -141,7 +158,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 30
   },
   {
     "name": "红莲极意",
@@ -149,7 +167,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "义结金兰",
@@ -157,7 +176,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 15
+    "attackRange": 15,
+    "CD": 120
   },
   {
     "name": "疾风极意",
@@ -165,7 +185,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 90
   },
   {
     "name": "万象斗气圈",
@@ -173,7 +194,8 @@
     "power": 170,
     "magicCost": null,
     "distance": 10,
-    "attackRange": 10
+    "attackRange": 10,
+    "CD": 1
   },
   {
     "name": "无我",
@@ -181,7 +203,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "六合星导脚",
@@ -189,7 +212,8 @@
     "power": 550,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 4
   },
   {
     "name": "破坏神脚",
@@ -197,7 +221,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "阴阳斗气斩",
@@ -205,7 +230,8 @@
     "power": 340,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "苍气炮",
@@ -213,7 +239,8 @@
     "power": 600,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "爆裂脚",
@@ -221,7 +248,8 @@
     "power": 600,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "翻天脚",
@@ -229,7 +257,8 @@
     "power": 450,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "斗魂旋风脚",
@@ -237,7 +266,8 @@
     "power": 850,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "凤凰舞",
@@ -245,7 +275,8 @@
     "power": 700,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "梦幻斗舞",
@@ -253,6 +284,7 @@
     "power": 1150,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   }
 ]

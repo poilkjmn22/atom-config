@@ -1,0 +1,682 @@
+[
+  {
+    "skillName": "钐镰客",
+    "name": "切割",
+    "id": "24373",
+    "power": 300,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "增盈切割",
+    "id": "24374",
+    "power": 380,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "死亡之影",
+    "id": "24378",
+    "power": 300,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "勾刃",
+    "id": "24386",
+    "power": 300,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "地狱入境",
+    "id": "24401",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 20
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "地狱出境",
+    "id": "24402",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 20
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "旋转钐割",
+    "id": "24376",
+    "power": 140,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "地狱切割",
+    "id": "24375",
+    "power": 460,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "死亡之涡",
+    "id": "24379",
+    "power": 100,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "神秘纹",
+    "id": "24404",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 30
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "噩梦钐割",
+    "id": "24377",
+    "power": 180,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "隐匿挥割",
+    "id": "24389",
+    "power": 340,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "束缚挥割",
+    "id": "24392",
+    "power": 140,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 1
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "灵魂切割",
+    "id": "24380",
+    "power": 460,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 30
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "灵魂钐割",
+    "id": "24381",
+    "power": 180,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 30
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "绞决",
+    "id": "24382",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "缢杀",
+    "id": "24383",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "断首",
+    "id": "24384",
+    "power": 200,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "神秘环",
+    "id": "24405",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 15,
+    "CD": 120
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "暴食",
+    "id": "24393",
+    "power": 500,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5,
+    "CD": 60
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "夜游魂衣",
+    "id": "24394",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 15
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "播魂种",
+    "id": "24387",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "大丰收",
+    "id": "24385",
+    "power": 800,
+    "magicCost": null,
+    "distance": 15,
+    "attackRange": 15,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "团契",
+    "id": "24398",
+    "power": 1000,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "绞决爪",
+    "id": "24390",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "缢杀爪",
+    "id": "24391",
+    "power": 400,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "回退",
+    "id": "24403",
+    "power": null,
+    "magicCost": null,
+    "distance": 30,
+    "attackRange": 0,
+    "CD": 10
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "虚无收割",
+    "id": "24395",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "交错收割",
+    "id": "24396",
+    "power": 520,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "阴冷收割",
+    "id": "24397",
+    "power": 200,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 1.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "收获月",
+    "id": "24388",
+    "power": 600,
+    "magicCost": null,
+    "distance": 25,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "夜游魂切割",
+    "id": "24399",
+    "power": 200,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "钐镰客",
+    "name": "夜游魂钐割",
+    "id": "24400",
+    "power": 100,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 1
+  },
+  {
+    "skillName": "武士",
+    "name": "刃风",
+    "id": "7477",
+    "power": 180,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "阵风",
+    "id": "7478",
+    "power": 280,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "心眼",
+    "id": "7498",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 15
+  },
+  {
+    "skillName": "武士",
+    "name": "燕飞",
+    "id": "7486",
+    "power": 260,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "士风",
+    "id": "7479",
+    "power": 280,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "风雅",
+    "id": "7483",
+    "power": 90,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "月光",
+    "id": "7481",
+    "power": 370,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "居合术",
+    "id": "7867",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "满月",
+    "id": "7484",
+    "power": 110,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "花车",
+    "id": "7482",
+    "power": 370,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "樱花",
+    "id": "7485",
+    "power": 110,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "明镜止水",
+    "id": "7499",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 55
+  },
+  {
+    "skillName": "武士",
+    "name": "雪风",
+    "id": "7480",
+    "power": 280,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·回天",
+    "id": "7494",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·晓天",
+    "id": "7492",
+    "power": 100,
+    "magicCost": null,
+    "distance": 20,
+    "attackRange": 0,
+    "CD": 10
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·夜天",
+    "id": "7493",
+    "power": 100,
+    "magicCost": null,
+    "distance": 5,
+    "attackRange": 0,
+    "CD": 10
+  },
+  {
+    "skillName": "武士",
+    "name": "默想",
+    "id": "7497",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 60
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·震天",
+    "id": "7490",
+    "power": 270,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 1
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·九天",
+    "id": "7491",
+    "power": 110,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 1
+  },
+  {
+    "skillName": "武士",
+    "name": "叶隐",
+    "id": "7495",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 5
+  },
+  {
+    "skillName": "武士",
+    "name": "意气冲天",
+    "id": "16482",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 120
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·红莲",
+    "id": "7496",
+    "power": 500,
+    "magicCost": null,
+    "distance": 10,
+    "attackRange": 10,
+    "CD": 120
+  },
+  {
+    "skillName": "武士",
+    "name": "必杀剑·闪影",
+    "id": "16481",
+    "power": 800,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 120
+  },
+  {
+    "skillName": "武士",
+    "name": "燕回返",
+    "id": "16483",
+    "power": null,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 0,
+    "CD": 60
+  },
+  {
+    "skillName": "武士",
+    "name": "照破",
+    "id": "16487",
+    "power": 580,
+    "magicCost": null,
+    "distance": 3,
+    "attackRange": 0,
+    "CD": 15
+  },
+  {
+    "skillName": "武士",
+    "name": "无明照破",
+    "id": "25779",
+    "power": 200,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 15
+  },
+  {
+    "skillName": "武士",
+    "name": "风光",
+    "id": "25780",
+    "power": 100,
+    "magicCost": null,
+    "distance": 0,
+    "attackRange": 5,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "奥义斩浪",
+    "id": "25781",
+    "power": 900,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "回返斩浪",
+    "id": "25782",
+    "power": 1350,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 1
+  },
+  {
+    "skillName": "武士",
+    "name": "彼岸花",
+    "id": "7489",
+    "power": 30,
+    "magicCost": null,
+    "distance": 6,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "天下五剑",
+    "id": "7488",
+    "power": 280,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "纷乱雪月花",
+    "id": "7487",
+    "power": 660,
+    "magicCost": null,
+    "distance": 6,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "回返彼岸花",
+    "id": "16484",
+    "power": 45,
+    "magicCost": null,
+    "distance": 6,
+    "attackRange": 0,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "回返五剑",
+    "id": "16485",
+    "power": 420,
+    "magicCost": null,
+    "distance": 8,
+    "attackRange": 8,
+    "CD": 2.5
+  },
+  {
+    "skillName": "武士",
+    "name": "回返雪月花",
+    "id": "16486",
+    "power": 990,
+    "magicCost": null,
+    "distance": 6,
+    "attackRange": 0,
+    "CD": 2.5
+  }
+]

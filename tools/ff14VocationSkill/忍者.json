@@ -5,7 +5,8 @@
     "power": 210,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "残影",
@@ -13,7 +14,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "绝风",
@@ -21,7 +23,8 @@
     "power": 320,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "隐遁",
@@ -29,7 +32,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 20
   },
   {
     "name": "飞刀",
@@ -37,7 +41,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "夺取",
@@ -45,7 +50,8 @@
     "power": 150,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "攻其不备",
@@ -53,7 +59,8 @@
     "power": 400,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "旋风刃",
@@ -61,7 +68,8 @@
     "power": 420,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "血雨飞花",
@@ -69,7 +77,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "天之印",
@@ -77,7 +86,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 20
   },
   {
     "name": "忍术",
@@ -85,7 +95,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "地之印",
@@ -93,7 +104,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 20
   },
   {
     "name": "缩地",
@@ -101,7 +113,8 @@
     "power": null,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "断绝",
@@ -109,7 +122,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "人之印",
@@ -117,7 +131,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 20
   },
   {
     "name": "生杀予夺",
@@ -125,7 +140,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "八卦无刃杀",
@@ -133,7 +149,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "强甲破点突",
@@ -141,7 +158,8 @@
     "power": 400,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "梦幻三段",
@@ -149,7 +167,8 @@
     "power": 150,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "风来刃",
@@ -157,7 +176,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "通灵之术·大虾蟆",
@@ -165,7 +185,8 @@
     "power": 160,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 6
+    "attackRange": 6,
+    "CD": 1
   },
   {
     "name": "六道轮回",
@@ -173,7 +194,8 @@
     "power": 500,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "天地人",
@@ -181,7 +203,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "命水",
@@ -189,7 +212,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "分身之术",
@@ -197,7 +221,8 @@
     "power": 80,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 90
   },
   {
     "name": "月影雷兽爪",
@@ -205,7 +230,8 @@
     "power": 560,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "月影雷兽牙",
@@ -213,7 +239,8 @@
     "power": 560,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "残影镰鼬",
@@ -221,7 +248,8 @@
     "power": 550,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "幻影野槌",
@@ -229,7 +257,8 @@
     "power": 50,
     "magicCost": null,
     "distance": 100,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": null
   },
   {
     "name": "风魔手里剑",
@@ -237,7 +266,8 @@
     "power": 450,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "通灵之术",
@@ -245,7 +275,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "火遁之术",
@@ -253,7 +284,8 @@
     "power": 350,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 1.5
   },
   {
     "name": "雷遁之术",
@@ -261,7 +293,8 @@
     "power": 600,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "冰遁之术",
@@ -269,7 +302,8 @@
     "power": 350,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "风遁之术",
@@ -277,7 +311,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "土遁之术",
@@ -285,7 +320,8 @@
     "power": 70,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 1.5
   },
   {
     "name": "水遁之术",
@@ -293,7 +329,8 @@
     "power": 500,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "劫火灭却之术",
@@ -301,7 +338,8 @@
     "power": 600,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 1.5
   },
   {
     "name": "冰晶乱流之术",
@@ -309,6 +347,7 @@
     "power": 1300,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   }
 ]

@@ -5,7 +5,8 @@
     "power": 180,
     "magicCost": 400,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "火炎",
@@ -13,7 +14,8 @@
     "power": 180,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "星灵移位",
@@ -21,7 +23,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 5
   },
   {
     "name": "闪雷",
@@ -29,7 +32,8 @@
     "power": 35,
     "magicCost": 200,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "冰冻",
@@ -37,7 +41,8 @@
     "power": 100,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "崩溃",
@@ -45,7 +50,8 @@
     "power": 100,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "烈炎",
@@ -53,7 +59,8 @@
     "power": 100,
     "magicCost": 1500,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "震雷",
@@ -61,7 +68,8 @@
     "power": 15,
     "magicCost": 400,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "魔罩",
@@ -69,7 +77,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "爆炎",
@@ -77,7 +86,8 @@
     "power": 260,
     "magicCost": 2000,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "以太步",
@@ -85,7 +95,8 @@
     "power": null,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 10
   },
   {
     "name": "魔泉",
@@ -93,7 +104,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 180
   },
   {
     "name": "冰封",
@@ -101,7 +113,8 @@
     "power": 260,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "玄冰",
@@ -109,7 +122,8 @@
     "power": 120,
     "magicCost": 1000,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "暴雷",
@@ -117,7 +131,8 @@
     "power": 35,
     "magicCost": 400,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "核爆",
@@ -125,7 +140,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "黑魔纹",
@@ -133,7 +149,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 3
+    "attackRange": 3,
+    "CD": 120
   },
   {
     "name": "激情咏唱",
@@ -141,7 +158,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "冰澈",
@@ -149,7 +167,8 @@
     "power": 310,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "炽炎",
@@ -157,7 +176,8 @@
     "power": 310,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "魔纹步",
@@ -165,7 +185,8 @@
     "power": null,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 3
   },
   {
     "name": "霹雷",
@@ -173,7 +194,8 @@
     "power": 20,
     "magicCost": 400,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "三连咏唱",
@@ -181,7 +203,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "秽浊",
@@ -189,7 +212,8 @@
     "power": 560,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "绝望",
@@ -197,7 +221,8 @@
     "power": 340,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "灵极魂",
@@ -205,7 +230,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "异言",
@@ -213,7 +239,8 @@
     "power": 760,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "高烈炎",
@@ -221,7 +248,8 @@
     "power": 140,
     "magicCost": 1500,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "高冰冻",
@@ -229,7 +257,8 @@
     "power": 140,
     "magicCost": 800,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "详述",
@@ -237,7 +266,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "悖论",
@@ -245,6 +275,7 @@
     "power": 500,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   }
 ]

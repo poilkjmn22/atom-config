@@ -5,7 +5,8 @@
     "power": 180,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "阵风",
@@ -13,7 +14,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "心眼",
@@ -21,7 +23,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "燕飞",
@@ -29,7 +32,8 @@
     "power": 260,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "士风",
@@ -37,7 +41,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "风雅",
@@ -45,7 +50,8 @@
     "power": 90,
     "magicCost": null,
     "distance": 8,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 2.5
   },
   {
     "name": "月光",
@@ -53,7 +59,8 @@
     "power": 370,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "居合术",
@@ -61,7 +68,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "满月",
@@ -69,7 +77,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "花车",
@@ -77,7 +86,8 @@
     "power": 370,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "樱花",
@@ -85,7 +95,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "明镜止水",
@@ -93,7 +104,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 55
   },
   {
     "name": "雪风",
@@ -101,7 +113,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "必杀剑·回天",
@@ -109,7 +122,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "必杀剑·晓天",
@@ -117,7 +131,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 20,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 10
   },
   {
     "name": "必杀剑·夜天",
@@ -125,7 +140,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 5,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 10
   },
   {
     "name": "默想",
@@ -133,7 +149,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "必杀剑·震天",
@@ -141,7 +158,8 @@
     "power": 270,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "必杀剑·九天",
@@ -149,7 +167,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 1
   },
   {
     "name": "叶隐",
@@ -157,7 +176,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 5
   },
   {
     "name": "意气冲天",
@@ -165,7 +185,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "必杀剑·红莲",
@@ -173,7 +194,8 @@
     "power": 500,
     "magicCost": null,
     "distance": 10,
-    "attackRange": 10
+    "attackRange": 10,
+    "CD": 120
   },
   {
     "name": "必杀剑·闪影",
@@ -181,7 +203,8 @@
     "power": 800,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "燕回返",
@@ -189,7 +212,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "照破",
@@ -197,7 +221,8 @@
     "power": 580,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "无明照破",
@@ -205,7 +230,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 15
   },
   {
     "name": "风光",
@@ -213,7 +239,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "奥义斩浪",
@@ -221,7 +248,8 @@
     "power": 900,
     "magicCost": null,
     "distance": 8,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 2.5
   },
   {
     "name": "回返斩浪",
@@ -229,7 +257,8 @@
     "power": 1350,
     "magicCost": null,
     "distance": 8,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 1
   },
   {
     "name": "彼岸花",
@@ -237,7 +266,8 @@
     "power": 30,
     "magicCost": null,
     "distance": 6,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "天下五剑",
@@ -245,7 +275,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 8,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 2.5
   },
   {
     "name": "纷乱雪月花",
@@ -253,7 +284,8 @@
     "power": 660,
     "magicCost": null,
     "distance": 6,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "回返彼岸花",
@@ -261,7 +293,8 @@
     "power": 45,
     "magicCost": null,
     "distance": 6,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "回返五剑",
@@ -269,7 +302,8 @@
     "power": 420,
     "magicCost": null,
     "distance": 8,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 2.5
   },
   {
     "name": "回返雪月花",
@@ -277,6 +311,7 @@
     "power": 990,
     "magicCost": null,
     "distance": 6,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   }
 ]

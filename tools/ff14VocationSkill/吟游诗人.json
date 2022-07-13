@@ -5,7 +5,8 @@
     "power": 160,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "直线射击",
@@ -13,7 +14,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "猛者强击",
@@ -21,7 +23,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "毒咬箭",
@@ -29,7 +32,8 @@
     "power": 15,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "失血箭",
@@ -37,7 +41,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "后跃射击",
@@ -45,7 +50,8 @@
     "power": null,
     "magicCost": null,
     "distance": 5,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 30
   },
   {
     "name": "连珠箭",
@@ -53,7 +59,8 @@
     "power": 110,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 2.5
   },
   {
     "name": "风蚀箭",
@@ -61,7 +68,8 @@
     "power": 20,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "纷乱箭",
@@ -69,7 +77,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "贤者的叙事谣",
@@ -77,7 +86,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "光阴神的礼赞凯歌",
@@ -85,7 +95,8 @@
     "power": null,
     "magicCost": null,
     "distance": 30,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 45
   },
   {
     "name": "军神的赞美歌",
@@ -93,7 +104,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "死亡箭雨",
@@ -101,7 +113,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 15
   },
   {
     "name": "战斗之声",
@@ -109,7 +122,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 20
+    "attackRange": 20,
+    "CD": 120
   },
   {
     "name": "放浪神的小步舞曲",
@@ -117,7 +131,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "完美音调",
@@ -125,7 +140,8 @@
     "power": 360,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "九天连箭",
@@ -133,7 +149,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "伶牙俐齿",
@@ -141,7 +158,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "侧风诱导箭",
@@ -149,7 +167,8 @@
     "power": 300,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 60
   },
   {
     "name": "行吟",
@@ -157,7 +176,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 20
+    "attackRange": 20,
+    "CD": 90
   },
   {
     "name": "烈毒咬箭",
@@ -165,7 +185,8 @@
     "power": 20,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "狂风蚀箭",
@@ -173,7 +194,8 @@
     "power": 25,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "大地神的抒情恋歌",
@@ -181,7 +203,8 @@
     "power": null,
     "magicCost": null,
     "distance": 30,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 90
   },
   {
     "name": "辉煌箭",
@@ -189,7 +212,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "影噬箭",
@@ -197,7 +221,8 @@
     "power": 270,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 2.5
   },
   {
     "name": "爆发射击",
@@ -205,7 +230,8 @@
     "power": 220,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "绝峰箭",
@@ -213,7 +239,8 @@
     "power": 100,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 25
+    "attackRange": 25,
+    "CD": 2.5
   },
   {
     "name": "百首龙牙箭",
@@ -221,7 +248,8 @@
     "power": 130,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 2.5
   },
   {
     "name": "光明神的最终乐章",
@@ -229,7 +257,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 20
+    "attackRange": 20,
+    "CD": 110
   },
   {
     "name": "爆破箭",
@@ -237,6 +266,7 @@
     "power": 600,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 25
+    "attackRange": 25,
+    "CD": 2.5
   }
 ]

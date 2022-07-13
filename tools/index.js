@@ -74,24 +74,25 @@ async function getFF14VocationalSkill(filepath) {
 
       const matchAttackRange = $tooltip.text().match(/范围[:：]?(\d+)/);
       const attackRange = parseInt(matchAttackRange && matchAttackRange[1]);
-      return { power, magicCost, distance, attackRange };
+
+      const matchCD = $tooltip.text().match(/复唱时间[:：]?(\d+(?:\.\d+)?)/);
+      const CD = parseFloat(matchCD && matchCD[1]);
+      return { power, magicCost, distance, attackRange, CD };
     }
     return skillInfoMap;
   } else {
     console.log("未获取到html内容!");
   }
 }
-async function convertSkillData(filepath) {
+async function writeSkillInfo(skillName, mapSkillInfo) {
   // const res = [["技能名称", "威力", "消耗魔法"]];
   const res = [];
-  const mapSkillInfo = await getFF14VocationalSkill(filepath);
   for (const [name, skillInfo] of mapSkillInfo) {
     res.push(Object.assign({ name }, skillInfo));
   }
   try {
-    const vocation = urlencode.decode(filepath.match(/\/([^/]+)$/)[1], "utf8");
     await writeFile(
-      path.resolve(`./ff14VocationSkill/${vocation}.json`),
+      path.resolve(`./ff14VocationSkill/${skillName}.json`),
       prettier.format(JSON.stringify(res), { semi: true, parser: "json" }),
       { encoding: "utf8" }
     );
@@ -112,9 +113,41 @@ const skillList = [
   // "舞者",
   // "龙骑士",
 ];
-for (const skill of skillList) {
-  convertSkillData(
-    `https://ff14.huijiwiki.com/wiki/${urlencode(skill, "utf8")}`
-  );
-  // break;
+async function loadAllSkill(skillList) {
+  const mapSkillInfoList = new Map();
+  for (const skill of skillList) {
+    const mapSkillInfo = await getFF14VocationalSkill(
+      `https://ff14.huijiwiki.com/wiki/${urlencode(skill, "utf8")}`
+    );
+    mapSkillInfoList.set(skill, mapSkillInfo);
+  }
+  return mapSkillInfoList;
 }
+
+loadAllSkill(skillList)
+  .then((res) => {
+    for (const [skillName, mapSkillInfo] of res) {
+      writeSkillInfo(skillName, mapSkillInfo);
+    }
+    return res;
+  })
+  .then(async (res) => {
+    const data = [];
+    for (const [skillName, mapSkillInfo] of res) {
+      if (!["武士", "钐镰客"].includes(skillName)) {
+        continue;
+      }
+      for (const [name, skillInfo] of mapSkillInfo) {
+        data.push(Object.assign({ skillName, name }, skillInfo));
+      }
+    }
+    try {
+      await writeFile(
+        path.resolve(`./ff14VocationSkill/钐镰客&武士.json`),
+        prettier.format(JSON.stringify(data), { semi: true, parser: "json" }),
+        { encoding: "utf8" }
+      );
+    } catch (error) {
+      console.error("there was an error:", error.message);
+    }
+  });

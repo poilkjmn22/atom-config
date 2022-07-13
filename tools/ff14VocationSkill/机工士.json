@@ -5,7 +5,8 @@
     "power": 140,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "独头弹",
@@ -13,7 +14,8 @@
     "power": 210,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "热弹",
@@ -21,7 +23,8 @@
     "power": 240,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 40
   },
   {
     "name": "整备",
@@ -29,7 +32,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 55
   },
   {
     "name": "虹吸弹",
@@ -37,7 +41,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 30
   },
   {
     "name": "散射",
@@ -45,7 +50,8 @@
     "power": 140,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 2.5
   },
   {
     "name": "狙击弹",
@@ -53,7 +59,8 @@
     "power": 270,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "超荷",
@@ -61,7 +68,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 10
   },
   {
     "name": "热冲击",
@@ -69,7 +77,8 @@
     "power": 170,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "车式浮空炮塔",
@@ -77,7 +86,8 @@
     "power": 70,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 6
   },
   {
     "name": "超档车式炮塔",
@@ -85,7 +95,8 @@
     "power": null,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "野火",
@@ -93,7 +104,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "弹射",
@@ -101,7 +113,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 5
+    "attackRange": 5,
+    "CD": 30
   },
   {
     "name": "自动弩",
@@ -109,7 +122,8 @@
     "power": 140,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 1.5
   },
   {
     "name": "热分裂弹",
@@ -117,7 +131,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "策动",
@@ -125,7 +140,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 20
+    "attackRange": 20,
+    "CD": 90
   },
   {
     "name": "钻头",
@@ -133,7 +149,8 @@
     "power": 570,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 20
   },
   {
     "name": "热独头弹",
@@ -141,7 +158,8 @@
     "power": 280,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "热狙击弹",
@@ -149,7 +167,8 @@
     "power": 360,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 2.5
   },
   {
     "name": "枪管加热",
@@ -157,7 +176,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 120
   },
   {
     "name": "火焰喷射器",
@@ -165,7 +185,8 @@
     "power": 80,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 8
+    "attackRange": 8,
+    "CD": 60
   },
   {
     "name": "毒菌冲击",
@@ -173,7 +194,8 @@
     "power": 50,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 20
   },
   {
     "name": "空气锚",
@@ -181,7 +203,8 @@
     "power": 570,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 40
   },
   {
     "name": "后式自走人偶",
@@ -189,7 +212,8 @@
     "power": null,
     "magicCost": null,
     "distance": 0,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 6
   },
   {
     "name": "超档后式人偶",
@@ -197,7 +221,8 @@
     "power": null,
     "magicCost": null,
     "distance": 30,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 15
   },
   {
     "name": "霰弹枪",
@@ -205,7 +230,8 @@
     "power": 150,
     "magicCost": null,
     "distance": 12,
-    "attackRange": 12
+    "attackRange": 12,
+    "CD": 2.5
   },
   {
     "name": "回转飞锯",
@@ -213,7 +239,8 @@
     "power": 570,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 25
+    "attackRange": 25,
+    "CD": 60
   },
   {
     "name": "超负荷车式炮塔",
@@ -221,7 +248,8 @@
     "power": 200,
     "magicCost": null,
     "distance": 40,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": null
   },
   {
     "name": "起爆",
@@ -229,7 +257,8 @@
     "power": null,
     "magicCost": null,
     "distance": 25,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1
   },
   {
     "name": "铁臂拳",
@@ -237,7 +266,8 @@
     "power": 120,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 1.5
   },
   {
     "name": "打桩枪",
@@ -245,7 +275,8 @@
     "power": 400,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": null
   },
   {
     "name": "滚轮冲",
@@ -253,7 +284,8 @@
     "power": 240,
     "magicCost": null,
     "distance": 30,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": 3
   },
   {
     "name": "王室对撞机",
@@ -261,6 +293,7 @@
     "power": 750,
     "magicCost": null,
     "distance": 3,
-    "attackRange": 0
+    "attackRange": 0,
+    "CD": null
   }
 ]
