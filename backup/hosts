@@ -1,0 +1,49 @@
+# https://tool.chinaz.com/dns
+104.20.23.46 nodejs.org
+104.20.22.46 nodejs.org
+
+20.205.243.166 github.com
+
+220.181.125.241 registry.npmmirror.com
+220.181.125.251 registry.npm.taobao.org
+104.19.154.92 www.npmjs.com
+175.174.16.236 cdn.npmmirror.com
+221.211.234.81 cdn.npmmirror.com
+175.146.188.249 cdn.npmmirror.com
+221.211.234.80 cdn.npmmirror.com
+175.174.16.234 cdn.npmmirror.com
+1.58.92.234 cdn.npmmirror.com
+42.59.1.10 cdn.npmmirror.com
+1.58.92.238 cdn.npmmirror.com
+42.59.1.14 cdn.npmmirror.com
+175.146.188.250 cdn.npmmirror.com
+42.7.27.242 cdn.npmmirror.com
+42.7.27.240 cdn.npmmirror.com
+42.59.1.16 cdn.npmmirror.com
+42.59.1.13 cdn.npmmirror.com
+42.59.1.15 cdn.npmmirror.com
+42.59.1.17 cdn.npmmirror.com
+
+59.82.43.241 element.eleme.cn
+
+23.3.104.100 www.java.com
+23.32.248.184 www.java.com
+
+13.250.129.152 plantuml.com
+54.151.156.30 plantuml.com
+
+46.82.174.69 cdn.jsdelivr.net
+
+108.138.246.56 sandcastle.cesium.com
+108.138.246.43 sandcastle.cesium.com
+108.138.246.24 sandcastle.cesium.com
+108.138.246.93 sandcastle.cesium.com
+
+99.86.4.42 cesium.com
+99.86.4.123 cesium.com
+99.86.4.31 cesium.com
+99.86.4.97 cesium.com
+99.86.4.55 ion.cesium.com
+99.86.4.26 ion.cesium.com
+99.86.4.111 ion.cesium.com
+99.86.4.18 ion.cesium.com
