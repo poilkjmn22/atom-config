@@ -1,29 +1,102 @@
-# https://tool.chinaz.com/dns
-104.20.23.46 nodejs.org
-104.20.22.46 nodejs.org
-
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+# 屏蔽Adobe激活服务器：
+0.0.0.0 activate.adobe.com
+0.0.0.0 practivate.adobe.com
+0.0.0.0 ereg.adobe.com
+0.0.0.0 activate.wip3.adobe.com
+0.0.0.0 wip3.adobe.com
+0.0.0.0 3dns-3.adobe.com
+0.0.0.0 3dns-2.adobe.com
+0.0.0.0 adobe-dns.adobe.com
+0.0.0.0 adobe-dns-2.adobe.com
+0.0.0.0 adobe-dns-3.adobe.com
+0.0.0.0 ereg.wip3.adobe.com
+0.0.0.0 activate-sea.adobe.com
+0.0.0.0 wwis-dubc1-vip60.adobe.com
+0.0.0.0 activate-sjc0.adobe.com
+# github.com
 20.205.243.166 github.com
+20.200.245.247 github.com
+20.27.177.113 github.com
+140.82.121.4 github.com
 
-220.181.125.241 registry.npmmirror.com
-220.181.125.251 registry.npm.taobao.org
-104.19.154.92 www.npmjs.com
-175.174.16.236 cdn.npmmirror.com
-221.211.234.81 cdn.npmmirror.com
-175.146.188.249 cdn.npmmirror.com
-221.211.234.80 cdn.npmmirror.com
-175.174.16.234 cdn.npmmirror.com
-1.58.92.234 cdn.npmmirror.com
-42.59.1.10 cdn.npmmirror.com
-1.58.92.238 cdn.npmmirror.com
-42.59.1.14 cdn.npmmirror.com
-175.146.188.250 cdn.npmmirror.com
-42.7.27.242 cdn.npmmirror.com
-42.7.27.240 cdn.npmmirror.com
-42.59.1.16 cdn.npmmirror.com
-42.59.1.13 cdn.npmmirror.com
-42.59.1.15 cdn.npmmirror.com
-42.59.1.17 cdn.npmmirror.com
-
+162.125.32.13 github.global.ssl.fastly.net
+199.59.149.206 github.global.ssl.fastly.net
+31.13.85.53 github.global.ssl.fastly.net
+43.226.16.8 github.global.ssl.fastly.net
+151.101.193.194 github.global.ssl.fastly.net
+104.18.10.128 sourceforge.net
+104.18.11.128 sourceforge.net
+151.101.1.69 stackoverflow.com
+151.101.65.69 stackoverflow.com
+151.101.129.69 stackoverflow.com
+151.101.193.69 stackoverflow.com
+52.85.247.33 crates.io
+52.85.247.61 crates.io
+52.85.247.78 crates.io
+52.85.247.91 crates.io
+185.199.108.153 threejs.org
+185.199.109.153 threejs.org
+185.199.110.153 threejs.org
+185.199.111.153 threejs.org
+# This line is auto added by aTrustAgent, do not modify, or aTrustAgent may unable to work
+127.0.0.1	localhost.sangfor.com.cn
+# www.rawgraphs.io
+52.197.0.54 www.rawgraphs.io
+13.250.129.152 www.plantuml.com
+54.151.156.30 www.plantuml.com
+151.101.129.69 stackoverflow.com
+151.101.65.69 stackoverflow.com
+151.101.1.69 stackoverflow.com
+151.101.193.69 stackoverflow.com
+104.26.7.30 d3js.org
+172.67.73.126 d3js.org
+104.26.6.30 d3js.org
+151.101.24.143 www.mapbox.com
+199.59.149.206 qbittorrent.org
+128.121.243.75 qbittorrent.org
+31.13.83.2 qbittorrent.org
+67.15.100.252 nipponhd.com
+69.171.229.73 nipponhd.com
+# dev
+# 114.55.80.225 npm.taobao.org
+	# 
+# 183.60.205.241 cdn.npmmirror.com
+# 125.88.144.198 cdn.npmmirror.com
+# 125.88.144.194 cdn.npmmirror.com
+# 183.60.205.249 cdn.npmmirror.com
+# 183.60.205.239 cdn.npmmirror.com
+# 58.221.32.242 cdn.npmmirror.com
+# 183.60.205.242 cdn.npmmirror.com
+# 58.221.32.240 cdn.npmmirror.com
+# 58.221.32.249 cdn.npmmirror.com
+# 58.221.32.243 cdn.npmmirror.com
+# 58.221.32.241 cdn.npmmirror.com
+# 124.225.38.236 cdn.npmmirror.com
+# 124.225.36.195 cdn.npmmirror.com
+# 58.221.32.244 cdn.npmmirror.com
+# 124.225.127.188 cdn.npmmirror.com
+# 183.60.205.243 cdn.npmmirror.com
+# EOF dev
 59.82.43.241 element.eleme.cn
 
 23.3.104.100 www.java.com
@@ -47,3 +120,4 @@
 99.86.4.26 ion.cesium.com
 99.86.4.111 ion.cesium.com
 99.86.4.18 ion.cesium.com
+
