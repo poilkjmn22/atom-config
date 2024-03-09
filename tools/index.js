@@ -2,7 +2,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const path = require("path");
 const urlencode = require("urlencode");
-const { writeFile } = require("fs/promises");
+const { writeFile, rm, mkdir } = require("fs/promises");
 const prettier = require("prettier");
 
 async function getFF14VocationalSkill(filepath) {
@@ -84,24 +84,7 @@ async function getFF14VocationalSkill(filepath) {
     console.log("未获取到html内容!");
   }
 }
-async function writeSkillInfo(skillName, mapSkillInfo) {
-  // const res = [["技能名称", "威力", "消耗魔法"]];
-  const res = [];
-  for (const [name, skillInfo] of mapSkillInfo) {
-    res.push(Object.assign({ name }, skillInfo));
-  }
-  try {
-    await writeFile(
-      path.resolve(`./ff14VocationSkill/${skillName}.json`),
-      prettier.format(JSON.stringify(res), { semi: true, parser: "json" }),
-      { encoding: "utf8" }
-    );
-  } catch (error) {
-    console.error("there was an error:", error.message);
-  }
-  return res;
-}
-
+const baseDir = "./ff14VocationSkill";
 const skillList = [
   "钐镰客",
   "黑魔法师",
@@ -113,6 +96,24 @@ const skillList = [
   // "舞者",
   // "龙骑士",
 ];
+async function writeSkillInfo(vocation, mapSkillInfo) {
+  // const res = [["技能名称", "威力", "消耗魔法"]];
+  const res = [];
+  for (const [name, skillInfo] of mapSkillInfo) {
+    res.push(Object.assign({ name }, skillInfo));
+  }
+  try {
+    await writeFile(
+      path.resolve(`${baseDir}/${vocation}.json`),
+      prettier.format(JSON.stringify(res), { semi: true, parser: "json" }),
+      { encoding: "utf8" }
+    );
+  } catch (error) {
+    console.error("there was an error:", error.message);
+  }
+  return res;
+}
+
 async function loadAllSkill(skillList) {
   const mapSkillInfoList = new Map();
   for (const skill of skillList) {
@@ -125,25 +126,31 @@ async function loadAllSkill(skillList) {
 }
 
 loadAllSkill(skillList)
-  .then((res) => {
-    for (const [skillName, mapSkillInfo] of res) {
-      writeSkillInfo(skillName, mapSkillInfo);
+  .then(async (res) => {
+    await rm(baseDir, {
+      recursive: true,
+      force: true,
+    });
+    await mkdir(baseDir);
+    for (const [vocation, mapSkillInfo] of res) {
+      writeSkillInfo(vocation, mapSkillInfo);
     }
     return res;
   })
   .then(async (res) => {
     const data = [];
-    for (const [skillName, mapSkillInfo] of res) {
-      if (!["武士", "钐镰客"].includes(skillName)) {
+    const vocationList = ["武士", "钐镰客", "黑魔法师"];
+    for (const [vocation, mapSkillInfo] of res) {
+      if (!vocationList.includes(vocation)) {
         continue;
       }
       for (const [name, skillInfo] of mapSkillInfo) {
-        data.push(Object.assign({ skillName, name }, skillInfo));
+        data.push(Object.assign({ vocation, name }, skillInfo));
       }
     }
     try {
       await writeFile(
-        path.resolve(`./ff14VocationSkill/钐镰客&武士.json`),
+        path.resolve(`./ff14VocationSkill/${vocationList.join("&")}.json`),
         prettier.format(JSON.stringify(data), { semi: true, parser: "json" }),
         { encoding: "utf8" }
       );
