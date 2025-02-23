@@ -91,6 +91,7 @@ call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-projectionist')
 call minpac#add('tpope/vim-obsession')
 call minpac#add('tpope/vim-abolish')
+call minpac#add('tpope/vim-dispatch')
 call minpac#add('junegunn/fzf')
 call minpac#add('nelstrom/vim-qargs')
 call minpac#add('kana/vim-textobj-user')
@@ -99,6 +100,7 @@ call minpac#add('mileszs/ack.vim')
 call minpac#add('dense-analysis/ale')
 call minpac#add('posva/vim-vue')
 call minpac#add('pangloss/vim-javascript')
+call minpac#add('janko-m/vim-test')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -219,9 +221,18 @@ augroup  fileComment
   autocmd BufWritePost *.vim,vimrc source % 
 augroup END
 
+augroup FiletypeGroup
+    autocmd!
+    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+augroup END
+
 " For JavaScript files, use 'eslint'
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
+\ 'typescript': ['eslint'],
+\ 'jsx': ['stylelint', 'eslint']
 \ }
 
 " Mapping in the style of unimpaired-next
@@ -231,16 +242,21 @@ nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
 
 " prettier files
+let g:ale_fixer_aliases = {'jsx': ['css', 'javascript']}
+
 let g:ale_fixers = {
 \ 'javascript': ['prettier'],
+\ 'typescript': ['prettier'],
 \ 'json': ['prettier'],
 \ 'scss': ['prettier'],
 \ 'css': ['prettier'],
 \ 'vue': ['prettier'],
 \ 'jsx': ['prettier'],
 \ }
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 
 " Syntax: JavaScript, Vue, ...
 let g:vue_pre_processors = ['scss']
 
+" TDD(Test Driving Development)
+let test#strategy = "dispatch"
