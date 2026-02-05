@@ -15,7 +15,13 @@
 66.42.104.150
 root
 Vv4%VQya*iJQqj*X
-### xray
-xrayFq
-Fq2198@qc
-port: 6300
+
+## xray安装
+1. bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+2. user/pwd
+    xrayFq
+    Fq2198@qc
+    port: 6300
+
+## steam
+    recovery code: R52853
