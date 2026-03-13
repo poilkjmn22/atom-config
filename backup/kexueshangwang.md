@@ -16,11 +16,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
    * User/Pwd: xrayFq / Fq2198@qc
 2. 安装 Cloudflare WARP (解决 IP 被封锁/地区限制)
 # 使用万能脚本安装 WARP 非全局 Proxy 模式
-bash <(curl -fsSL git.io/warp.sh) menu
+- wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
+- bash <(curl -fsSL git.io/warp.sh) menu
 
  * 关键选择：选择 “安装 WARP 非全局网络接口 (Proxy 模式)”。
  * 记录端口：默认通常为 40000。
- * 验证：curl -x socks5://127.0.0.1:40000 ip.gs (需显示为 Cloudflare IP)。
+ * 验证：curl -x socks5://127.0.0.1:40000 https://www.cloudflare.com/cdn-cgi/trace (有warp=on)。
 三、 面板配置与分流逻辑 (针对 Cursor/Anthropic)
 1. 配置入站 (Inbound)
  * 协议：VLESS + Reality (目前最稳，推荐)。
