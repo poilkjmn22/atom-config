@@ -62,13 +62,36 @@ set softtabstop=2
 set mouse=a
 set number
 set nocompatible
-filetype plugin on
 runtime macros/matchit.vim
 set nobackup
 set nowritebackup
 set laststatus=2
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
+set t_Co=256
+
+" 启用语法高亮
+syntax enable
+filetype plugin on
+filetype indent on
+
+" JSX 配置
+let g:vim_jsx_pretty_colorful_config = 1 " 启用彩色配置
+let g:vim_jsx_pretty_highlight_close_tag = 1 " 高亮闭合标签
+
+" 允许在 .js 文件中使用 JSX
+let g:jsx_ext_required = 0
+
+" TypeScript 配置
+let g:typescript_indent_disable = 1 " 禁用 TypeScript 的缩进规则（使用默认的）
+" === 文件类型检测 ===
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
+autocmd BufNewFile,BufRead *.ts set filetype=typescript
+autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.js set filetype=javascript
+" === 缩进设置 ===
+autocmd FileType javascript.jsx setlocal shiftwidth=2 tabstop=2
+autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
 
 " keymap
 noremap <Up> <Nop>
@@ -79,31 +102,37 @@ nnoremap <C-p> : <C-u>Fzf<CR>
 nnoremap <C-p><C-a> : <C-u>FzfAll<CR>
 map <C-c> :%s///gn<CR> " 统计当前模式的统计个数
 
-" use minpac to help  manage packages
-packadd minpac
-call minpac#init()
+if !has('nvim')
+  " use minpac to help  manage packages
+  packadd minpac
+  call minpac#init()
 
-call minpac#add('k-takata/minpac', {'type': 'opt'})
-call minpac#add('tpope/vim-unimpaired')
-call minpac#add('tpope/vim-surround')
-call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
-call minpac#add('tpope/vim-commentary')
-call minpac#add('tpope/vim-projectionist')
-call minpac#add('tpope/vim-obsession')
-call minpac#add('tpope/vim-abolish')
-call minpac#add('tpope/vim-dispatch')
-call minpac#add('junegunn/fzf')
-call minpac#add('nelstrom/vim-qargs')
-call minpac#add('kana/vim-textobj-user')
-call minpac#add('kana/vim-textobj-lastpat')
-call minpac#add('mileszs/ack.vim')
-call minpac#add('dense-analysis/ale')
-call minpac#add('posva/vim-vue')
-call minpac#add('pangloss/vim-javascript')
-call minpac#add('janko-m/vim-test')
+  call minpac#add('k-takata/minpac', {'type': 'opt'})
+  call minpac#add('tpope/vim-unimpaired')
+  call minpac#add('tpope/vim-surround')
+  call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+  call minpac#add('tpope/vim-commentary')
+  call minpac#add('tpope/vim-projectionist')
+  call minpac#add('tpope/vim-obsession')
+  call minpac#add('tpope/vim-abolish')
+  call minpac#add('tpope/vim-dispatch')
+  call minpac#add('junegunn/fzf')
+  call minpac#add('nelstrom/vim-qargs')
+  call minpac#add('kana/vim-textobj-user')
+  call minpac#add('kana/vim-textobj-lastpat')
+  call minpac#add('mileszs/ack.vim')
+  call minpac#add('dense-analysis/ale')
+  call minpac#add('posva/vim-vue')
+  call minpac#add('pangloss/vim-javascript')
+  call minpac#add('maxmellon/vim-jsx-pretty')   " JSX 高亮和增强
+  call minpac#add('leafgarland/typescript-vim') " TypeScript 语法
+  call minpac#add('peitalin/vim-jsx-typescript') " TSX 支持
+  call minpac#add('janko-m/vim-test')
+  call minpac#add('github/copilot.vim')
 
-command! PackUpdate call minpac#update()
-command! PackClean call minpac#clean()
+  command! PackUpdate call minpac#update()
+  command! PackClean call minpac#clean()
+endif
 
 " search & substitution
 xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
@@ -218,23 +247,51 @@ command! Acf call FileCommentCheck()
 augroup  fileComment
   autocmd!
   autocmd BufWritePost *.vue,*.js,*.scss,*.cpp,*.c Acf
-  autocmd BufWritePost *.vim,vimrc source % 
+  autocmd BufWritePost *.vim,vimrc source %
 augroup END
 
 augroup FiletypeGroup
     autocmd!
     au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
 augroup END
-
-" For JavaScript files, use 'eslint'
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-
-let g:ale_linters = {
-\ 'javascript': ['eslint'],
-\ 'typescript': ['eslint'],
-\ 'jsx': ['stylelint', 'eslint']
+" === ALE 配置 ===
+let g:ale_linter_aliases = {
+\ 'typescriptreact': 'typescript',
+\ 'javascript.jsx': 'javascript',
+\ 'vue': ['vue', 'javascript', 'css'],
+\ 'less': ['css']
 \ }
+let g:ale_linters = {
+\ 'typescript': ['eslint', 'tsserver'],
+\ 'typescriptreact': ['eslint', 'tsserver'],
+\ 'javascript': ['eslint'],
+\ 'javascript.jsx': ['eslint'],
+\ 'vue': ['eslint', 'stylelint', 'vls'],
+\ 'less': ['stylelint', 'lessc'],
+\ 'css': ['stylelint'],
+\ 'scss': ['stylelint'],
+\ }
+let g:ale_fixers = {
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'typescript': ['prettier'],
+\ 'typescriptreact': ['prettier'],
+\ 'javascript': ['prettier'],
+\ 'javascript.jsx': ['prettier'],
+\ 'vue': ['prettier'],
+\ }
+let g:ale_typescript_prettier_options = '--parser typescript --single-quote --trailing-comma all'
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+let g:ale_fix_on_save = 0
+" 设置 TypeScript 文件的 ESLint 选项
+let g:ale_typescript_eslint_options = '--parser @typescript-eslint/parser'
 
+" 确保 ALE 使用正确的配置文件
+let g:ale_javascript_eslint_use_global = 1
+let g:ale_typescript_eslint_use_global = 1
+
+" 设置 ESLint 执行选项
+let g:ale_javascript_eslint_executable = 'eslint'
+let g:ale_typescript_eslint_executable = 'eslint'
 " Mapping in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
@@ -242,18 +299,28 @@ nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
 
 " prettier files
-let g:ale_fixer_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_fixer_aliases = {
+\ 'jsx': ['css', 'javascript'],
+\ 'typescriptreact': ['css', 'typescript'],
+\ 'less': ['css'],
+\ }
 
 let g:ale_fixers = {
-\ 'javascript': ['prettier'],
-\ 'typescript': ['prettier'],
-\ 'json': ['prettier'],
-\ 'scss': ['prettier'],
-\ 'css': ['prettier'],
-\ 'vue': ['prettier'],
-\ 'jsx': ['prettier'],
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'javascript': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'typescript': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'javascript.jsx': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'typescriptreact': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'scss': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'less': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'css': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'json': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
+\ 'vue': ['prettier', 'remove_trailing_lines', 'trim_whitespace'],
 \ }
-let g:ale_fix_on_save = 0
+" 设置修复器执行顺序
+let g:ale_fixers_execution_order = {
+\ '*': ['remove_trailing_lines', 'trim_whitespace', 'prettier'],
+\}
 
 " Syntax: JavaScript, Vue, ...
 let g:vue_pre_processors = ['scss']
