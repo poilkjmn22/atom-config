@@ -1,0 +1,79 @@
+# ------------------------------------------------
+# ⚡ Powerlevel10k instant prompt
+# ------------------------------------------------
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# ------------------------------------------------
+# 🍎 Apple Silicon (M5 Max) 环境变量
+# ------------------------------------------------
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# ------------------------------------------------
+# ⚡ NVM 懒加载 (针对 ARM 路径优化)
+# ------------------------------------------------
+export NVM_DIR="$HOME/.nvm"
+lazy-nvm() {
+  unset -f node npm npx nvm pnpm
+  # 注意：这里路径改为了 Homebrew 在 ARM 上的标准路径
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+}
+
+node() { lazy-nvm; node "$@"; }
+npm()  { lazy-nvm; npm "$@"; }
+npx()  { lazy-nvm; npx "$@"; }
+nvm()  { lazy-nvm; nvm "$@"; }
+pnpm() { lazy-nvm; pnpm "$@"; }
+
+# ------------------------------------------------
+# pnpm
+# ------------------------------------------------
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+# ------------------------------------------------
+# ⚡ Powerlevel10k 主题 (确保你已 brew install romkatv/powerlevel10k/powerlevel10k)
+# ------------------------------------------------
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# ------------------------------------------------
+# ⚡ 别名 (Alias) - 全部保留
+# ------------------------------------------------
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+alias g="git"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git pull"
+alias ni="npm install"
+alias nr="npm run"
+alias nd="npm run dev"
+alias nb="npm run build"
+alias pi="pnpm install"
+alias pr="pnpm run"
+alias pd="pnpm dev"
+alias pb="pnpm build"
+alias ll="ls -alh"
+alias cls="clear"
+alias cfg="cd ~/.config && ls -la"
+alias killnode="pkill -f node"
+
+# ------------------------------------------------
+# 智能体与代理 (新增)
+# ------------------------------------------------
+export OPENROUTER_API_KEY="你的Key"
+# 方便借用旧机代理
+alias proxy="export https_proxy=http://192.168.1.10:7890 http_proxy=http://192.168.1.10:7890 all_proxy=socks5://192.168.1.10:7890"
+alias unproxy="unset https_proxy http_proxy all_proxy"
+
+# ------------------------------------------------
+# 项目目录 (请根据实际手动创建目录)
+# ------------------------------------------------
+alias webdev="cd ~/Documents/webdev"
+alias workdev="cd ~/Documents/work/nengzhong/react-lingzhou/react"
