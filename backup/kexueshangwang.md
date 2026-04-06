@@ -111,3 +111,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
  * TUN 验证：在 Mac 终端执行 curl https://ipinfo.io。
    * 预期结果："org": "AS13335 Cloudflare, Inc."
    * 失败结果：显示 Vultr IP 或中国本地 IP（请检查服务模式是否为绿色 Active）。
+
+## temp
+b{G8pkRz*,YJk_pC
