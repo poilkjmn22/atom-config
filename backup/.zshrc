@@ -111,7 +111,7 @@ alias killnode="pkill -f node"
 # ------------------------------------------------
 # 项目目录快捷方式
 # ------------------------------------------------
-alias webdev="cd ~/Documents/WebDev"
+alias webdev="cd ~/Documents/webdev"
 alias workdev="cd ~/Documents/work/nengzhong/react-lingzhou/react"
 
 # code agent ai

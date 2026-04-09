@@ -84,6 +84,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 
 3. 获取订阅链接
  * 进入 【订阅管理】 -> 复制 Clash 链接。
+https://sub-web.qingsay.com
 四、 客户端配置 (Mac + Clash Verge Rev)
 1. 导入配置
  * 打开 Clash Verge Rev -> Profiles -> 粘贴链接并 Import。
