@@ -26,6 +26,45 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 1. 配置入站 (Inbound)
  * 协议：VLESS + Reality (目前最稳，推荐)。
  * 设置订阅 ID：在编辑界面填写 vultr-node（用于后续一键导出）。
+    
+    在 3x-ui 面板中配置 **VLESS + Reality** 是目前最推荐的方案，因为它能模拟真实网站流量，抗封锁能力极强。
+    按照以下步骤在你的面板上操作：
+    ### 1. 进入入站列表
+    登录 3x-ui 面板（http://你的IP:6300），点击左侧菜单的 **【入站列表 (Inbounds)】**，然后点击右上角的 **【添加入站 (Add Inbound)】**。
+    ### 2. 基础设置 (Basic Settings)
+     * **备注 (Remark):** 随便起个名字，比如 Vultr-Reality。
+     * **协议 (Protocol):** 选择 **vless**。
+     * **监听 IP (Listening IP):** 保持默认 0.0.0.0。
+     * **端口 (Port):** 建议使用 **443**（这是最像真实 HTTPS 流量的端口）。
+       * *注意：如果 443 被占用，也可以用其他大端口。*
+    ### 3. 用户设置 (Client Settings)
+     * **传输配置 (Transport):** 选择 **tcp**。
+     * **UUID:** 点击旁边的按钮生成一个新的随机 ID（这是你的连接密钥）。
+     * **流控 (Flow):** 必须选择 **xtls-rprx-vision**。
+    ### 4. 重点：Reality 设置
+    找到下方的 **Reality** 开关并打开，填写以下核心参数：
+     * **xver:** 0 (默认)
+     * **目标网站 (Dest):** www.microsoft.com:443 或 dl.google.com:443
+       * *原理：这是你打算“伪装”成的真实网站，建议选大厂域名。*
+     * **服务器名称 (SNI):** 与上面一致，填 www.microsoft.com 或 dl.google.com。
+     * **Short ID:** 点击旁边的生成按钮，生成一串随机字符。
+     * **私钥 (Private Key):** 点击旁边的 **【Get New Keys】**。
+       * *系统会自动生成一对公钥和私钥。私钥留在服务端，公钥会自动填入你的链接里。*
+    ### 5. 保存并关联订阅
+     1. 点击页面底部的 **【添加 (Add)】**。
+     2. **关键关联：** 在入站列表中找到刚创建的节点，点击 **【操作 (Operate)】** -> **【编辑 (Edit)】**。
+     3. 找到 **Subscription ID** 项，输入你之前笔记里定的名字（如 vultr-node）。
+     4. 保存。
+    ### 6. 在 Clash Verge 中更新
+     1. 回到你的 Mac。
+     2. 打开 **Clash Verge Rev** -> **Profiles**。
+     3. 点击你之前导入的那个订阅旁边的 **【刷新 (Refresh)】** 图标。
+     4. **检查：** 此时节点列表里应该会出现这个 Vultr-Reality 节点。
+    ### 💡 为什么这么配？
+     * **Reality:** 它不需要你再去申请 SSL 证书，直接“借用”微软或谷歌的证书，GFW 很难分辨。
+     * **443 端口:** 在网络审查中，443 是标准网页端口，混在正常流量中隐蔽性最高。
+     * **TUN 模式配合:** 此时配合你已经开启的 **TUN 模式**，Cursor 所有的加密请求都会通过这个 Reality 隧道到达 VPS，再通过 **WARP** 访问 Anthropic，形成完美的“隐身链条”。
+    **配置好后，如果连接不上（Timeout），请检查 Vultr 后台的 Firewall 是否放行了 443 端口（TCP 协议）。**
 2. 配置可视化分流 (Outbound & Routing)
 在 3x-ui 【Xray 相关设置】 中添加：
     2.1 Outbounds (出站设置)
@@ -119,4 +158,4 @@ https://sub-web.qingsay.com
    * 失败结果：显示 Vultr IP 或中国本地 IP（请检查服务模式是否为绿色 Active）。
 
 ## temp
-b{G8pkRz*,YJk_pC
+
