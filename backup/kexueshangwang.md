@@ -3,8 +3,11 @@
  * 购买服务器：推荐美西（洛杉矶/硅谷）或新加坡。
  * SSH 链接：使用终端或 SSH 工具连接。
  * 放行端口（重要，防止面板打不开）：
-   # 彻底关闭防火墙（最快，适合调试）
-systemctl stop firewalld; systemctl disable firewalld; ufw disable
+# 彻底关闭防火墙（最快，适合调试）
+- systemctl stop firewalld; systemctl disable firewalld; ufw disable
+- firewall-cmd --permanent --add-port=443/tcp
+- firewall-cmd --permanent --add-port=6300/tcp
+- firewall-cmd --reload
 
 二、 服务端核心安装 (3x-ui + WARP)
 1. 安装 3x-ui 面板 (支持原生 Clash 订阅)
@@ -104,8 +107,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
       "domain:api.anthropic.com",
       "domain:anthropic.com",
       "domain:claude.ai",
+      "domain:api2.cursor.sh",
       "domain:cursor.sh",
       "domain:cursor.com",
+      "domain:api.openai.com",
       "domain:openai.com",
       "domain:chatgpt.com",
       "domain:oaistatic.com",
@@ -115,6 +120,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
         "domain:gemini.google.com",
         "domain:ai.google.dev",
         "domain:generativelanguage.googleapis.com",
+        "domain:googleapis.com",
         "domain:makersuite.google.com",
         "domain:bard.google.com"
         ]
