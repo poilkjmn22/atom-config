@@ -7,6 +7,7 @@
 - systemctl stop firewalld; systemctl disable firewalld; ufw disable
 - firewall-cmd --permanent --add-port=443/tcp
 - firewall-cmd --permanent --add-port=6300/tcp
+- ...80, 40000（WARP 端口）等你后续根据实际情况添加
 - firewall-cmd --reload
 
 二、 服务端核心安装 (3x-ui + WARP)
